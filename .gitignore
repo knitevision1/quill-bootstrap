@@ -1,5 +1,5 @@
 #Ignore these directories
-/node_modules/
-/grunt/
-/includes/
-/test-infra/
+node_modules
+grunt
+includes
+test-infra
