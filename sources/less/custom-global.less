@@ -1,0 +1,76 @@
+
+
+
+
+// Navbar styles
+
+.navbar {
+	margin-top: @navbar-margin-top;
+	border-radius: 0;
+	border: none;
+
+	.fa {
+		color: #fff;
+	}
+}
+
+.navbar-brand {
+	font-size: @navbar-brand-font-size;
+	font-weight: bold;
+}
+
+.navbar-nav > li > a {
+	font-size: @navbar-link-font-size;
+	font-weight: bold;
+	color: #fff;
+	padding: 15px 10px; // Need this because the padding from tab overrides padding of the anchors in the navbar
+}
+
+
+
+// Page Content Styles
+
+
+//Wrapping all the page information in one wrapper so it controlls better
+.page-headers-wrapper {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.page-header {
+	margin: 0;
+	border-bottom: none;
+}
+
+.watch-a-tour {
+	float: right;
+}
+
+
+//Tabs styles
+
+.nav-tabs li a {
+	color: #000;
+}
+
+// First tab gets a radius to the left
+.nav-tabs > li .first-tab{
+	border-top-left-radius: 5px;
+}
+
+// Last tab gets a radius to the right
+.nav-tabs > li .last-tab{
+	border-top-right-radius: 5px;
+}
+
+.tab-content {
+	border: 1px solid;
+	border-color: @tab-content-border-color;
+}
+
+
+// Font Awesome styles
+
+.fa-2x {
+	font-size: 1.3em !important;
+}
