@@ -1,6 +1,6 @@
 #Ignore these directories
-/node_modules
-/grunt
-/includes
-/test-infra
-/ai
+node_modules/
+grunt/
+includes/
+test-infra/
+ai/
