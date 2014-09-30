@@ -1,0 +1,35 @@
+.ul-reset-mixin {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.border-mixin {
+	border: 1px solid #cecece;
+}
+
+//Section mixins
+
+.section-mixin {
+	padding: @content-padding;
+	border-bottom: 1px solid @border-color;
+}
+
+//Inputs mixins
+
+//Select mixins
+
+.select-mixin {
+	padding: @select-padding;
+	border-radius: 5px;
+	border: 1px solid @border-color;
+	color: #000;
+	font-size: @tab-subnavigation-a-font-size;
+	width: 100%;
+}
+
+.icon-wrapper-mixin {
+	width: 33px;
+	height: 33px;
+	border-radius: 4px;
+}

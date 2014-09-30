@@ -1,76 +1,233 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
 
+//Tags
 
+p, h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
 
+section {
+	.section-mixin();
+}
 
-// Navbar styles
+//Navbar styles
 
-.navbar {
-	margin-top: @navbar-margin-top;
-	border-radius: 0;
-	border: none;
+//Brand img
+
+.image-brand img {
+	padding-top: ((@navbar-height - @logo-height) / 2);
+}
+
+//Navbar lists anchor fonts
+
+.navbar-default .navbar-nav > li > a {
+	color: #000;
+	font-size: @nav-a-font-size;
+	line-height: @logo-height;
+	padding: @nav-a-padding;
+	font-weight: 500;
+	border-top: none;
 
 	.fa {
-		color: #fff;
+		color: @gray-color;
+		margin-left: 5px;
 	}
 }
 
-.navbar-brand {
-	font-size: @navbar-brand-font-size;
-	font-weight: bold;
-}
-
-.navbar-nav > li > a {
-	font-size: @navbar-link-font-size;
-	font-weight: bold;
-	color: #fff;
-	padding: 15px 10px; // Need this because the padding from tab overrides padding of the anchors in the navbar
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	border-top: none;
 }
 
 
+//Page content styles
 
-// Page Content Styles
-
-
-//Wrapping all the page information in one wrapper so it controlls better
-.page-headers-wrapper {
-	margin-top: 30px;
-	margin-bottom: 40px;
+select {
+	.select-mixin();
 }
 
-.page-header {
-	margin: 0;
+.select-white {
+	background: #fff;
+}
+
+.select-gray {
+	background: @select-gray-bg;
+}
+
+.section-content-wrapper {
+	.section-mixin();
+}
+
+//Tabs
+
+.tabs-navigation-list {
+	li {
+		a {
+			font-size: @tab-subnavigation-a-font-size + 2;
+		}
+	}
+}
+
+.nav-tabs {
 	border-bottom: none;
 }
 
-.watch-a-tour {
+#first-tab {
+	border-left: 1px solid #cecece;
+}
+
+
+
+//Subnavigation list
+
+.tab-subnavigation-wrapper {
+	padding: 10px 0;
+	background: #fff;
+	border-bottom: 1px solid @border-color;
+	border-top: 1px solid @border-color;
+
+	ul {
+		.ul-reset-mixin();
+		float: left;
+
+		li {
+			float: left;
+			padding: @tab-subnavigation-li-padding;
+
+			a {
+				padding: @tab-subnavigation-a-padding;
+				border-radius: 5px;
+				font-size: @tab-subnavigation-a-font-size;
+				color: #000;
+			}
+
+			a.active {
+				background: @tab-subnavigation-active-bg;
+			}
+
+		}
+	}
+}
+
+
+//Icons
+
+.icons-wrapper {
+	padding-top: @content-padding-no-sides;
+}
+
+.icon-wrapper {
+	.icon-wrapper-mixin();
+	float: left;
+}
+
+.icon-row {
+	margin-bottom: 20px;
+	.icon-wrapper {
+		margin-right: 20px;
+		float: none;
+		display: inline-block;
+	}
+}
+
+.icon-first-row {
+	margin-top: 26px;
+}
+
+.icon-last-row {
+	margin-bottom: 0;
+}
+
+.icon-green {
+	background: @icon-green-bg;
+}
+
+.icon-orange {
+	background: @icon-orange-bg;
+}
+
+.icon-red{
+	background: @icon-red-bg;
+}
+
+.icon-gray {
+	background: @icon-gray-bg;
+}
+
+.icon-pencil {
+	background-image: url(../images/icon-pencil.png);
+	background-repeat: no-repeat;
+	background-position: 5px;	
+}
+
+.icon-puzzle {
+	background-image: url(../images/icon-puzzle.png);
+	background-repeat: no-repeat;
+	background-position-x: 7px;	
+	background-position-y: 4px;	
+}
+
+.icon-flag {
+	background-image: url(../images/icon-flag.png);
+	background-repeat: no-repeat;
+	background-position: 5px;
+}
+
+
+//Icons description legend
+
+.icons-description-wrapper {
+	float: left;
+	position: relative;
+	bottom: 2px;
+	margin-left: 10px;
+}
+
+.title {
+	font-size: 14px;
+}
+
+.title-not-started {
+	line-height: 33px;
+	position: static;
+}
+
+.explanation {
+	font-size: 13px;
+}
+
+.how-we-grade {
 	float: right;
+
+	.fa {
+		color: @border-color;
+		margin-left: 10px;
+
+		&:hover {
+			color: #747474;
+		}
+	}
+}
+
+.student-name {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+//Tooltips
+
+.tooltip.in {
+	opacity: 1;
 }
 
 
-//Tabs styles
+//Helpers
 
-.nav-tabs li a {
-	color: #000;
+.no-pl {
+	padding-left: 0;
 }
 
-// First tab gets a radius to the left
-.nav-tabs > li .first-tab{
-	border-top-left-radius: 5px;
-}
-
-// Last tab gets a radius to the right
-.nav-tabs > li .last-tab{
-	border-top-right-radius: 5px;
-}
-
-.tab-content {
-	border: 1px solid;
-	border-color: @tab-content-border-color;
-}
-
-
-// Font Awesome styles
-
-.fa-2x {
-	font-size: 1.3em !important;
+.no-pr {
+	padding-right: 0;
 }

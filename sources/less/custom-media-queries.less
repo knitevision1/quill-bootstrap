@@ -1,20 +1,22 @@
-// Making tabs 100% width below 768px to look fine
+@media screen and (min-width: @screen-sm) {
 
-@media screen and (max-width: 768px) {
-	.nav-tabs li {
-		width: 100%;
-//Same needed for anchors to fill up the tab's LI width
-		a {
-			width: 100%;
-		}
+	.navbar-nav {
+		float: right;
 	}
+
 }
 
-// Floating the "watch a tour" element to the left below 992px so it looks fine.
+@media screen and (max-width: @screen-md) {
 
-@media screen and (max-width: 992px) {
-	.watch-a-tour {
-		float: left;
-		margin-top: 20px;
+	//Floating how we grade to left for tablets
+
+	.how-we-grade {
+		float: left !important;
+		text-align: left;
+		margin-top: 15px;
+	}
+
+	.select-gray {
+		margin-top: 30px;
 	}
 }

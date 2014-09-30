@@ -21,7 +21,7 @@ module.exports = function(grunt){
 	
     watch: {
       css: {
-        files: ['sources/less/*.less', 'sources/mixins/*.less', 'sources/less/custom*.less'],
+        files: ['sources/less/*.less', 'sources/mixins/*.less', 'sources/less/custom-*.less'],
         tasks: ['less'],
       },
       includereplace: {
