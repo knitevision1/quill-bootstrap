@@ -1,6 +1,17 @@
+/* ==========================================================================
+   Font embedding
+   ========================================================================== */
+
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
 
-//Tags
+
+
+
+/* ==========================================================================
+   Resetting the margins and paddings on p, h1, h2, etc
+   ========================================================================== */
+
 
 p, h1, h2, h3, h4, h5, h6 {
 	padding: 0;
@@ -11,7 +22,10 @@ section {
 	.section-mixin();
 }
 
-//Navbar styles
+/* ==========================================================================
+   Navbar styles
+   ========================================================================== */
+
 
 //Brand img
 
@@ -35,13 +49,17 @@ section {
 	}
 }
 
+//Fixing hover on navbar anchors so as they dont have the same border as tabs anchors
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
 	border-top: none;
 }
 
 
-//Page content styles
+/* ==========================================================================
+   Inputs, selects, etc
+   ========================================================================== */
 
 select {
 	.select-mixin();
@@ -55,11 +73,12 @@ select {
 	background: @select-gray-bg;
 }
 
-.section-content-wrapper {
-	.section-mixin();
-}
 
-//Tabs
+
+/* ==========================================================================
+   Tabs
+   ========================================================================== */
+
 
 .tabs-navigation-list {
 	li {
@@ -76,8 +95,6 @@ select {
 #first-tab {
 	border-left: 1px solid #cecece;
 }
-
-
 
 //Subnavigation list
 
@@ -111,8 +128,12 @@ select {
 }
 
 
-//Icons
+/* ==========================================================================
+   Icons
+   ========================================================================== */
 
+
+//Wrappers
 .icons-wrapper {
 	padding-top: @content-padding-no-sides;
 }
@@ -121,6 +142,9 @@ select {
 	.icon-wrapper-mixin();
 	float: left;
 }
+
+
+//Icon rows
 
 .icon-row {
 	margin-bottom: 20px;
@@ -139,6 +163,9 @@ select {
 	margin-bottom: 0;
 }
 
+
+//Background color for icon wrappers
+
 .icon-green {
 	background: @icon-green-bg;
 }
@@ -154,6 +181,8 @@ select {
 .icon-gray {
 	background: @icon-gray-bg;
 }
+
+//Background image for icon wrappers
 
 .icon-pencil {
 	background-image: url(../images/icon-pencil.png);
@@ -215,14 +244,20 @@ select {
 	font-size: 24px;
 }
 
-//Tooltips
+/* ==========================================================================
+   Tooltips
+   ========================================================================== */
+
 
 .tooltip.in {
 	opacity: 1;
 }
 
 
-//Helpers
+/* ==========================================================================
+   Helper styles to quickly manipulate the looks
+   ========================================================================== */
+
 
 .no-pl {
 	padding-left: 0;
