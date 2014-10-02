@@ -3569,7 +3569,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 17px 28.5px;
+  padding: 14px 36px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
 }
@@ -6200,15 +6200,14 @@ button.close {
   border-bottom: 1px solid #cecece;
 }
 .select-mixin {
-  padding: 12px 15px;
   border-radius: 5px;
   border: 1px solid #cecece;
   color: #000;
   font-size: 14px;
-  width: 100%;
+  width: 284px;
 }
 .icon-wrapper-mixin {
-  width: 33px;
-  height: 33px;
+  width: 40px;
+  height: 40px;
   border-radius: 4px;
 }

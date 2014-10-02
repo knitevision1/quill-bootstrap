@@ -3,20 +3,23 @@
    ========================================================================== */
 
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
 
 
 
 
 /* ==========================================================================
-   Resetting the margins and paddings on p, h1, h2, etc
+   Tags
    ========================================================================== */
 
-
+// Resetting the margins and paddings on p, h1, h2, etc
 p, h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	margin: 0;
 }
+
+// Resetting the outline
+
 
 section {
 	.section-mixin();
@@ -38,7 +41,7 @@ section {
 .navbar-default .navbar-nav > li > a {
 	color: #000;
 	font-size: @nav-a-font-size;
-	line-height: @logo-height;
+	line-height: @logo-height + 5;
 	padding: @nav-a-padding;
 	font-weight: 500;
 	border-top: none;
@@ -56,6 +59,13 @@ section {
 	border-top: none;
 }
 
+.navbar-default {
+	.navbar-nav {
+		position: relative;
+		left: 30px;
+	}
+}
+
 
 /* ==========================================================================
    Inputs, selects, etc
@@ -63,6 +73,51 @@ section {
 
 select {
 	.select-mixin();
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.select-custom-mixin {
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		a {
+			padding: 5px 20px;
+			display: block;
+
+			&:hover {
+				background: #f0f0f0;
+			}
+
+			&:hover, &:focus, &:active {
+				-webkit-appearance: none;
+			}
+		}
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.fa {
+		color: #737373;
+		float: right;
+		position: relative;	
+		text-align: center;
+		width: 36px;
+		font-size: 1.3em;
+		line-height: 46px;
+	}
+}
+
+
+.select-box-disabled {
+	background: @select-gray-bg;
 }
 
 .select-white {
@@ -71,6 +126,15 @@ select {
 
 .select-gray {
 	background: @select-gray-bg;
+	width: 220px;
+}
+
+.select-box-trigger {
+	padding: 13px 40px;
+	width: 284px;
+	display: block;
+	position: relative;
+	right: 20px;
 }
 
 
@@ -99,7 +163,7 @@ select {
 //Subnavigation list
 
 .tab-subnavigation-wrapper {
-	padding: 10px 0;
+	padding: 8px 0;
 	background: #fff;
 	border-bottom: 1px solid @border-color;
 	border-top: 1px solid @border-color;
@@ -147,9 +211,9 @@ select {
 //Icon rows
 
 .icon-row {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	.icon-wrapper {
-		margin-right: 20px;
+		margin-right: 17px;
 		float: none;
 		display: inline-block;
 	}
@@ -187,20 +251,20 @@ select {
 .icon-pencil {
 	background-image: url(../images/icon-pencil.png);
 	background-repeat: no-repeat;
-	background-position: 5px;	
+	background-position: 9px;	
 }
 
 .icon-puzzle {
 	background-image: url(../images/icon-puzzle.png);
 	background-repeat: no-repeat;
-	background-position-x: 7px;	
-	background-position-y: 4px;	
+	background-position-x: 11px;	
+	background-position-y: 7px;	
 }
 
 .icon-flag {
 	background-image: url(../images/icon-flag.png);
 	background-repeat: no-repeat;
-	background-position: 5px;
+	background-position: 9px;
 }
 
 
@@ -209,7 +273,6 @@ select {
 .icons-description-wrapper {
 	float: left;
 	position: relative;
-	bottom: 2px;
 	margin-left: 10px;
 }
 
@@ -218,7 +281,7 @@ select {
 }
 
 .title-not-started {
-	line-height: 33px;
+	line-height: @icon-size;
 	position: static;
 }
 
@@ -229,13 +292,16 @@ select {
 .how-we-grade {
 	float: right;
 
+	&:hover {
+		.fa {
+			color: #747474;
+		}
+
+	}
+
 	.fa {
 		color: @border-color;
 		margin-left: 10px;
-
-		&:hover {
-			color: #747474;
-		}
 	}
 }
 
