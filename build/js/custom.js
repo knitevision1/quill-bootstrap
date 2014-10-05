@@ -37,21 +37,36 @@ $(document).ready(function(){
 
 
 
-	//3rd tab
+	//Activity Planner tab
 
-	$("#classroom-select-3").selectbox({
+	$("#sort-by-app").selectbox({
 		classToggle: "fa fa-caret-down",
-		classHolder: "select-mixin select-custom-mixin select-white",
-		classSelector: "select-box-trigger"
-	});
-
-	$("#units-select-3").selectbox({
-		classToggle: "fa fa-caret-down",
-		classHolder: "select-mixin select-custom-mixin select-gray",
+		classHolder: "select-mixin select-custom-mixin select-gray activity-planner-select",
 		classOptions: "select-white",
 		classSelector: "select-box-trigger",
 		classDisabled: "select-box-disabled",
-		classHolderDisabled: "select-gray"
+		classHolderDisabled: "select-gray",
+		effect: "fade"
+	});
+
+	$("#sort-by-level").selectbox({
+		classToggle: "fa fa-caret-down",
+		classHolder: "select-mixin select-custom-mixin select-gray activity-planner-select",
+		classOptions: "select-white",
+		classSelector: "select-box-trigger",
+		classDisabled: "select-box-disabled",
+		classHolderDisabled: "select-gray",
+		effect: "fade"
+	});
+
+	$("#sort-by-concept").selectbox({
+		classToggle: "fa fa-caret-down",
+		classHolder: "select-mixin select-custom-mixin select-gray activity-planner-select",
+		classOptions: "select-white",
+		classSelector: "select-box-trigger",
+		classDisabled: "select-box-disabled",
+		classHolderDisabled: "select-gray",
+		effect: "fade"
 	});
 
 

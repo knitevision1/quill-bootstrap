@@ -25,6 +25,12 @@ section {
 	.section-mixin();
 }
 
+//Buttons
+
+button {
+	.button-mixin();
+}
+
 /* ==========================================================================
    Navbar styles
    ========================================================================== */
@@ -70,6 +76,51 @@ section {
 /* ==========================================================================
    Inputs, selects, etc
    ========================================================================== */
+input {
+	.input-mixin();
+}
+
+input[type=checkbox].css-checkbox {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height:1px;
+	width:1px;
+	margin:-1px;
+	padding:0;
+	border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:28px;
+	height:23px; 
+	display:inline-block;
+	line-height:23px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:23px;
+	vertical-align:middle;
+	cursor:pointer;
+	position: relative;
+	left: 4px;
+	margin: 0;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -23px;
+}
+
+label.css-label {
+	background-image:url(../images/checkbox-sprite.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
 
 select {
 	.select-mixin();
@@ -191,6 +242,31 @@ select {
 	}
 }
 
+.tab-subnavigation-breadcrumb-wrapper {
+	padding: 8px 0;
+	background: #fff;
+	border-bottom: 1px solid @border-color;
+	border-top: 1px solid @border-color;
+
+	ul {
+		.ul-reset-mixin();
+		float: left;
+
+		li {
+			float: left;
+
+			a {
+				font-size: @tab-subnavigation-a-font-size;
+			}
+
+			a.active {
+				
+			}
+
+		}
+	}
+}
+
 
 /* ==========================================================================
    Icons
@@ -219,11 +295,11 @@ select {
 	}
 }
 
-.icon-first-row {
+.icon-row:first-child {
 	margin-top: 26px;
 }
 
-.icon-last-row {
+.icon-row:last-child {
 	margin-bottom: 0;
 }
 
@@ -257,8 +333,7 @@ select {
 .icon-puzzle {
 	background-image: url(../images/icon-puzzle.png);
 	background-repeat: no-repeat;
-	background-position-x: 11px;	
-	background-position-y: 7px;	
+	background-position: 11px 7px;
 }
 
 .icon-flag {
@@ -305,9 +380,184 @@ select {
 	}
 }
 
-.student-name {
+.section-header {
 	font-weight: 600;
 	font-size: 24px;
+}
+
+
+
+
+
+/* ==========================================================================
+   Activity Planner styles
+   ========================================================================== */
+
+#activity-planner {
+	input:not([type="checkbox"]) {
+		width: 326px;
+		margin-top: 20px;
+	}
+
+	button {
+		margin-left: 20px;
+		border: none;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	.select-box-trigger {
+		width: auto;
+	}
+
+	.activity-planner-select {
+		display: inline-block;
+		width: auto;
+		margin-right: 18px;
+	}
+
+	.selects-wrapper {
+		margin-top: 20px;
+	}
+}
+
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+#activity-planner {
+	table {
+		margin-top: 20px;
+		border-collapse: separate;
+		margin-bottom: 0;
+		thead {
+			background: @thead-bg;
+			border: 1px solid @border-color;
+			tr {
+				th {
+					border-left: 1px solid @border-color;
+					border-bottom: none;
+					border-top: 1px solid @border-color;
+				}
+
+				th:nth-child(1) {
+					width: 5%;
+					border-top-left-radius: 5px;
+					text-align: center;
+				}
+
+				th:nth-child(2) {
+					width: 7%;
+				}
+
+				th:nth-child(3) {
+					width: 53%;
+				}
+
+				th:nth-child(4) {
+					width: 15%;
+				}
+
+				th:nth-child(5) {
+					width: 20%;
+					border-top-right-radius: 5px;
+					border-right: 1px solid @border-color;
+				}
+			}
+		}
+
+		tbody {
+			
+			tr:nth-child(3), tr:nth-child(4), tr:nth-child(5), tr:nth-child(8), tr:nth-child(9) {
+				background: @thead-bg;
+			}	
+			tr {
+				background: #fff;
+				td {
+					font-size: 14px;
+					padding: 7px; 
+				}
+				td:nth-child(1) {
+					text-align: center;
+					border-left: 1px solid @border-color;
+				}
+
+				td:nth-child(2) {
+					text-align: center;
+				}
+
+				td:nth-child(3) {
+					text-align: left;
+				}
+
+				td:nth-child(4) {
+					text-align: right;
+				}
+
+				td:nth-child(5) {
+					text-align: left;
+					border-right: 1px solid @border-color;
+				}
+			}
+		}
+	}
+
+	.table > thead > tr > th,
+	.table > tbody > tr > th,
+	.table > tfoot > tr > th,
+	.table > thead > tr > td,
+	.table > tbody > tr > td,
+	.table > tfoot > tr > td {
+		vertical-align: middle;
+	}
+}
+
+.learning-to-use {
+	table {
+		tbody {
+			tr {
+				&:first-child {
+					td:nth-child(1) {
+						border-top-left-radius: 5px;
+					}
+
+					td:nth-child(3) {
+						border-top-right-radius: 5px;
+					}
+				}
+
+				&:last-child {
+					td:nth-child(1) {
+						border-bottom-left-radius: 5px;
+					}
+
+					td:nth-child(3) {
+						border-bottom-right-radius: 5px;
+					}
+				}
+				background: @thead-bg !important;
+				td:nth-child(1) {
+					width: 5%;
+				}
+
+				td:nth-child(2) {
+					width: 90%;
+					text-align: left !important;
+				}
+				td:nth-child(3) {
+					border-right: 1px solid @border-color;
+					width: 5%;
+				}
+			}
+		}
+	}
+
+	.fake-border {
+		width: 99.4%;
+		margin: 0 auto;
+		position: relative;
+		bottom: 1px;
+	}
 }
 
 /* ==========================================================================
@@ -323,6 +573,13 @@ select {
 /* ==========================================================================
    Helper styles to quickly manipulate the looks
    ========================================================================== */
+
+.fake-border {
+	border-top: 1px solid @border-color;
+}
+.no-border {
+	border: none;
+}   
 
 
 .no-pl {

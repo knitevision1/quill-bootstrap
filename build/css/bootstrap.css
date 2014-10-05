@@ -2061,7 +2061,7 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #cecece;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -6199,6 +6199,13 @@ button.close {
   padding: 30px 18px;
   border-bottom: 1px solid #cecece;
 }
+.input-mixin {
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  color: #000;
+  font-size: 14px;
+  padding: 12px;
+}
 .select-mixin {
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -6210,4 +6217,17 @@ button.close {
   width: 40px;
   height: 40px;
   border-radius: 4px;
+}
+.checkbox-mixin {
+  height: 21px;
+  width: 21px;
+  border-radius: 5px;
+  background: #e6e6e6;
+  border: 1px solid #cecece;
+}
+.button-mixin {
+  padding: 13px 25px;
+  font-size: 14px;
+  background: #737373;
+  border-radius: 5px;
 }

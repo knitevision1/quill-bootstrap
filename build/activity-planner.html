@@ -56,7 +56,7 @@
 
 							<ul class="nav nav-tabs tabs-navigation-list" role="tablist">
 
-								<li class="active">
+								<li>
 									<a href="#scorebook" id="first-tab" role="tab" data-toggle="tab">Scorebook</a>
 								</li>
 
@@ -64,7 +64,7 @@
 									<a href="#portfolio" role="tab" data-toggle="tab">Portfolio</a>
 								</li>
 
-								<li>
+								<li class="active">
 									<a href="#activity-planner" role="tab" data-toggle="tab">Activity Planner</a>
 								</li>
 
@@ -801,7 +801,497 @@
 
 							</div> <!-- //.tab-pane-active -->			 
 								
+															<div class="tab-pane" id="activity-planner">
+							  	
+								<div class="tab-subnavigation-breadcrumb-wrapper">
+
+									<div class="container">
+
+										<ul>
+											
+										    <div class="row">
+
+										        <div id="crumbs">
+													<ul>
+														<li><a href="#1" class="active">Select Activities</a></li>
+														<li><a href="#2">Assign Activities</a></li>
+													</ul>
+												</div>
+
+											</div>
+											   
+										</ul>
+
+									</div> <!-- //.container -->
+										
+								</div> <!-- //.tab-subnavigation-wrapper -->
+
+
+								<!-- ==========================================================================
+									   Icons legend
+									========================================================================== -->
+
+								<div class="container">
+					
+									<section class="section-content-wrapper">
+										<h3 class="section-header">Create a New Unit</h3>
+
+										<input type="text" placeholder="e.g. Learning How to Use Nouns">
+									</section>
+
+
+									<section>
+										<h3 class="section-header">Select Activities</h3>
+
+										<input type="text" placeholder="Select Activities">
+										<button>Search</button>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 selects-wrapper">
+
+												<select id="sort-by-app">
+
+													<option value="Lala">Sort By App</option>
+													<option value="Fa">fdsfsf</option>
+													<option value="fds">sdfdsf</option>
+
+												</select>
+
+												<select id="sort-by-level">
+
+													<option value="Lala">Sort By Level</option>
+													<option value="Fa">fdsfsf</option>
+													<option value="fds">sdfdsf</option>
+
+												</select>
+
+												<select id="sort-by-concept">
+
+													<option value="Lala">Sort By Concept</option>
+													<option value="Fa">fdsfsf</option>
+													<option value="fds">sdfdsf</option>
+
+												</select>
+											</div>	
+
+										</div>
+
+										<table class="table">
+
+											<thead>
+												<tr>
+													<th><img src="images/icon-check.png" alt=""></th>
+													<th>App</th>
+													<th>Activity</th>
+													<th>Standard Level</th>
+													<th>Concept</th>
+												</tr>
+											</thead>
+
+											<tbody>
+
+											<!-- ==========================================================================
+												   Commentary for checkboxes
+												========================================================================== -->
+
+												<!-- Checkbox and their label have to have the same ID, otherwise, checkbox will not be checked. Also, the label is empty, but it has to be here since without it checkbox will not appear at all. That's a tricky way, but works for all browsers -->
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox1" class="css-checkbox">
+														<label for="checkbox1" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox2" class="css-checkbox">
+														<label for="checkbox2" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox3" class="css-checkbox">
+														<label for="checkbox3" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox4" class="css-checkbox">
+														<label for="checkbox4" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox5" class="css-checkbox">
+														<label for="checkbox5" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox6" class="css-checkbox">
+														<label for="checkbox6" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox7" class="css-checkbox">
+														<label for="checkbox7" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox8" class="css-checkbox">
+														<label for="checkbox8" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox9" class="css-checkbox">
+														<label for="checkbox9" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox10" class="css-checkbox">
+														<label for="checkbox10" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+											</tbody>
+										</table>
+										<div class="fake-border"></div>
+
+									</section>
+
+									<section class="learning-to-use">
+										<h3 class="section-header">Learning How to Use Nouns</h3>
+										
+										<table class="table">
+
+											<tbody>
+												<tr>
+													<td><img src="images/icon-flag-gray.png" alt=""></td>
+													<td>Training for the Gold</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Past Tense Verbs</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Possessive Nouns</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Singular and Plural Nouns with Matching Verbs</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-flag-gray.png" alt=""></td>
+													<td>Referencing an Article</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+											</tbody>
+										</table>
+										<div class="fake-border"></div>
+
+									</section>
+									
+								</div> <!-- //.container -->
+
+									
+
+
+
+								<!-- ==========================================================================
+									   First section
+									========================================================================== -->
 								
+								<div class="container">
+
+									<section>
+
+										<h3 class="section-header">Peter Gault</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row">
+
+													<div class="icon-wrapper icon-green icon-pencil" ></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div id="tooltip-test" class="icon-wrapper icon-green icon-puzzle" data-toggle="tooltip" data-placement="left" title="<h1>Capitalize Dates and Names of People</h1><p>App: Sentence Shuffle</p> <p>CCSS: 1.2a. USe capitalization for dates and names of people.</p> <p>Retries: 3 attempts</p>"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row icon-last-row">
+
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-flag"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Second section
+									========================================================================== -->
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="section-header">Ryan Novas</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row">
+
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row icon-last-row">
+
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-flag"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div><!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Third section
+									========================================================================== -->
+
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="section-header">Caroline Smith</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row">
+
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+
+												</div> <!-- //.icon-row -->
+
+
+												<div class="icon-row icon-last-row">
+
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+
+												</div> <!-- //.icon-row -->
+
+											</div><!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Fourth section
+									========================================================================== -->
+
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="section-header">Sarah Jones</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row icon-last-row">
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div>	<!-- //.row -->
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+
+								<!-- ==========================================================================
+									   Fifth section
+									========================================================================== -->
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="section-header">Alex Redmond</h3>
+
+									</section>
+									
+								</div> <!-- //.container -->
+
+							</div> <!-- //.tab-pane-active -->			
 
 															<div class="tab-pane" id="class-manager">
 							  	

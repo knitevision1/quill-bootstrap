@@ -1,0 +1,90 @@
+#crumbs {
+  text-align: center;
+  position: relative;
+  left: 30px;
+}
+
+  #crumbs ul {
+    list-style: none;
+    display: inline-table;
+  }
+    #crumbs ul li {
+      display: inline;
+    }
+  
+    #crumbs ul li a {
+      display: block;
+      float: left;
+      background: @tab-subnavigation-active-bg;
+      text-align: center;
+      padding: 6px 38px;
+      position: relative;
+      margin: 0; 
+      color: #000;
+      
+      font-size: @tab-subnavigation-a-font-size;
+      text-decoration: none;
+
+      border: 1px solid @border-color;
+
+      &:hover {
+        color: #000;
+      }
+
+      &.active {
+        background: #fff;
+        color: #000;
+        &:after {
+          border-left: 16px solid #fff;
+        }
+      }
+    }
+      #crumbs ul li a:after {
+        content: "";  
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+          border-left: 16px solid @tab-subnavigation-active-bg;
+        position: absolute; right: -16px; top: 0;
+        z-index: 1;
+      }
+
+      #crumbs ul li a:hover:after {
+        content: "";  
+        border-top: 16px solid transparent;
+        border-bottom: 16px solid transparent;
+          border-left: 16px solid #fff;
+        position: absolute; right: -16px; top: 0;
+        z-index: 1;
+      }
+      
+      #crumbs ul li a:before {
+        content: "";  
+        border-top: 16px solid transparent;
+          border-bottom: 16px solid transparent;
+          border-left: 16px solid @border-color;
+        position: absolute; left: 0; top: 0;
+      }
+  
+        #crumbs ul li:first-child a {
+          border-top-left-radius: 10px; border-bottom-left-radius: 10px;
+          padding: 6px 38px 6px 20px;
+        }
+        #crumbs ul li:first-child a:before {
+          display: none; 
+        }
+
+        #crumbs ul li:last-child a {
+          border-top-right-radius: 10px; border-bottom-right-radius: 10px;
+        }
+
+        #crumbs ul li:last-child a:after {
+          display: none; 
+        }
+       
+      
+      #crumbs ul li a:hover {
+        background: #fff;
+      }
+        #crumbs ul li a:hover:after:not(.active) {
+          border-left-color: @tab-subnavigation-active-bg;
+        }
