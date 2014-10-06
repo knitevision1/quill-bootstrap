@@ -3,7 +3,7 @@
    ========================================================================== */
 
 
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
 
 
 
@@ -29,6 +29,9 @@ section {
 
 button {
 	.button-mixin();
+	&:focus {
+		outline: none;
+	}
 }
 
 /* ==========================================================================
@@ -130,16 +133,25 @@ select {
 	}
 }
 
-.select-custom-mixin {
-
-	ul {
+.button-select-wrapper {
+	button {
+		.select-mixin();
+		text-align: left;
+		width: 100%;
+	}
+	
+	.dropdown-menu {
 		list-style-type: none;
 		padding: 0;
 		margin: 0;
+		width: 100%;
+		border-radius: 5px;
+		font-size: 14px;
 
 		a {
-			padding: 5px 20px;
+			padding: 5px 14px;
 			display: block;
+			color: #000;
 
 			&:hover {
 				background: #f0f0f0;
@@ -157,27 +169,48 @@ select {
 
 	.fa {
 		color: #737373;
-		float: right;
 		position: relative;	
-		text-align: center;
-		width: 36px;
+		float: right;
 		font-size: 1.3em;
-		line-height: 46px;
+		text-align: right;
+		line-height: normal;
+		width: auto;
 	}
 }
+
+.select-white-wrapper {
+	.dropdown-menu {
+		width: 265px !important;
+	}
+}
+
+.select-gray-wrapper {
+	.dropdown-menu {
+		width: 100% !important;
+	}
+}
+
+
 
 
 .select-box-disabled {
 	background: @select-gray-bg;
 }
 
+.select-white-wrapper {
+	width: 280px;
+}
+
 .select-white {
 	background: #fff;
 }
 
+.select-gray-wrapper {
+	width: 220px;
+}
+
 .select-gray {
 	background: @select-gray-bg;
-	width: 220px;
 }
 
 .select-box-trigger {
