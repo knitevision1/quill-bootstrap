@@ -13,25 +13,30 @@
     > span {
       position: relative;
       float: left; // Collapse white-space
-      padding: @padding-base-vertical @padding-base-horizontal;
+      padding: 9.5px 15px;
       line-height: @line-height-base;
       text-decoration: none;
       color: @pagination-color;
       background-color: @pagination-bg;
-      border: 1px solid @pagination-border;
+      border: 1px solid @border-color;
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
       margin-left: -1px;
     }
     &:first-child {
       > a,
       > span {
         margin-left: 0;
-        .border-left-radius(@border-radius-base);
+        .border-left-radius(5px);
+        border-top-left-radius: 0;
       }
     }
     &:last-child {
       > a,
       > span {
-        .border-right-radius(@border-radius-base);
+        .border-right-radius(5px);
+        border-top-right-radius: 0;
       }
     }
   }

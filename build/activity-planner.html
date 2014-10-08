@@ -856,33 +856,52 @@
 										<input type="text" placeholder="Select Activities">
 										<button>Search</button>
 
-										<div class="row">
+										<div class="row activity-page-dropdown-wrapper">
 
-											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 selects-wrapper">
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
 
-												<select id="sort-by-app">
+												<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 no-pl">
+													<div class="button-select">
+														<button type="button" class="select-mixin select-gray button-select button-select-wrapper" data-toggle="dropdown">
+														Sort by App
+														<i class="fa fa-caret-down"></i>
+														</button>
 
-													<option value="Lala">Sort By App</option>
-													<option value="Fa">fdsfsf</option>
-													<option value="fds">sdfdsf</option>
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="/test.html">Dropdown link</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+													</div>
+												</div>
 
-												</select>
+												<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 no-pl">
+													<div class="button-select">
+														<button type="button" class="select-mixin select-gray button-select button-select-wrapper" data-toggle="dropdown">
+														Sort by Level
+														<i class="fa fa-caret-down"></i>
+														</button>
 
-												<select id="sort-by-level">
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="/test.html">Dropdown link</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+													</div>
+												</div>
 
-													<option value="Lala">Sort By Level</option>
-													<option value="Fa">fdsfsf</option>
-													<option value="fds">sdfdsf</option>
+												<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 no-pl">
+													<div class="button-select">
+														<button type="button" class="select-mixin select-gray button-select button-select-wrapper" data-toggle="dropdown">
+														Sort by Concept
+														<i class="fa fa-caret-down"></i>
+														</button>
 
-												</select>
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="/test.html">Dropdown link</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+													</div>
+												</div>
 
-												<select id="sort-by-concept">
-
-													<option value="Lala">Sort By Concept</option>
-													<option value="Fa">fdsfsf</option>
-													<option value="fds">sdfdsf</option>
-
-												</select>
 											</div>	
 
 										</div>
@@ -895,7 +914,7 @@
 													<th>App</th>
 													<th>Activity</th>
 													<th>Standard Level</th>
-													<th>Concept</th>
+													<th class="active"><a href="#">Concept <i class="fa fa-caret-up"></i></a></th>
 												</tr>
 											</thead>
 
@@ -1020,6 +1039,16 @@
 											</tbody>
 										</table>
 										<div class="fake-border"></div>
+
+										<ul class="pagination">
+											<li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+										</ul>
 
 									</section>
 

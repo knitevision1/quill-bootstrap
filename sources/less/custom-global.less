@@ -34,6 +34,11 @@ button {
 	}
 }
 
+.button-select {
+	text-align: left;
+	width: 100%;
+}
+
 /* ==========================================================================
    Navbar styles
    ========================================================================== */
@@ -432,7 +437,7 @@ select {
 		margin-top: 20px;
 	}
 
-	button {
+	button:not(.button-select) {
 		margin-left: 20px;
 		border: none;
 		color: #fff;
@@ -454,6 +459,33 @@ select {
 	}
 }
 
+.activity-page-dropdown-wrapper {
+	margin-top: 20px;
+
+	.dropdown-menu {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		width: 94%;
+		border-radius: 5px;
+		font-size: 14px;
+
+		a {
+			padding: 5px 14px;
+			display: block;
+			color: #000;
+
+			&:hover {
+				background: #f0f0f0;
+			}
+
+			&:hover, &:focus, &:active {
+				-webkit-appearance: none;
+			}
+		}
+	}	
+}
+
 
 /* ==========================================================================
    Tables
@@ -471,6 +503,15 @@ select {
 					border-left: 1px solid @border-color;
 					border-bottom: none;
 					border-top: 1px solid @border-color;
+
+					.fa {
+						float: right;
+						.fa-caret-mixin();
+					}
+
+					&.active {
+						background: #e6e6e6;
+					}
 				}
 
 				th:nth-child(1) {
@@ -590,6 +631,18 @@ select {
 		margin: 0 auto;
 		position: relative;
 		bottom: 1px;
+	}
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.pagination {
+	margin: 0;
+
+	.fa {
+		.fa-caret-mixin();
 	}
 }
 
