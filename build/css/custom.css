@@ -515,7 +515,7 @@ select:focus {
   -webkit-appearance: none;
 }
 .learning-to-use {
-  padding: 30px 18px 85px 18px;
+  padding: 30px 0 85px 0;
 }
 /* ==========================================================================
    Tables
@@ -533,6 +533,10 @@ select:focus {
   border-left: 1px solid #cecece;
   border-bottom: none;
   border-top: 1px solid #cecece;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
 }
 #activity-planner table thead tr th .fa {
   float: right;
