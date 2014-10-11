@@ -27,11 +27,14 @@ section {
 
 //Buttons
 
-button {
+button:not(.select-mixin) {
 	.button-mixin();
+	.transition-mixin();
 	&:focus {
 		outline: none;
 	}
+	border: 0;
+	font-weight: bold;
 }
 
 .button-select {
@@ -39,9 +42,22 @@ button {
 	width: 100%;
 }
 
+.button-gray {
+	background-color: @button-gray-bg;
+	color: #fff;
+
+	&:hover {
+		background-color: darken(@button-gray-bg, 7%)
+	}
+}
+
 .button-green {
 	background-color: @green-color;
-	margin: 20px 0;
+	color: #fff;
+
+	&:hover {
+		background-color: darken(@green-color, 7%)
+	}
 }
 
 /* ==========================================================================
@@ -285,6 +301,38 @@ select {
 	}
 }
 
+
+.student-subnavigation {
+	padding: 12px 0;
+
+	a {
+		font-size: 14px;
+		color: #999;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	span {
+		line-height: 24px;
+	}
+
+	img {
+		margin-right: 9px;
+	}
+}
+
+.student-course-info {
+	a {
+		margin-right: 50px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}	
+
 .tab-subnavigation-breadcrumb-wrapper {
 	padding: 8px 0;
 	background: #fff;
@@ -398,6 +446,10 @@ select {
 	font-size: 14px;
 }
 
+.title-v-centered {
+	line-height: @icon-size;
+}
+
 .title-not-started {
 	line-height: @icon-size;
 	position: static;
@@ -447,6 +499,7 @@ select {
 		border: none;
 		color: #fff;
 		font-weight: bold;
+		margin-top: 20px;
 	}
 
 	.select-box-trigger {
@@ -640,6 +693,68 @@ select {
 		margin: 0 auto;
 		position: relative;
 		bottom: 1px;
+	}
+}
+
+/* ==========================================================================
+   Student Page Styles
+   ========================================================================== */
+.start-activity-wrapper {
+	button {
+		float: right;
+	}
+}
+
+.student-page {
+	.section-header {
+		margin-bottom: 30px;
+	}
+}
+
+
+/* ==========================================================================
+   Fake table styles
+   ========================================================================== */
+
+.fake-table {
+	border: 1px solid @border-color;
+	border-radius: 5px;
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.header {
+		background-color: @fake-table-header-bg;
+		padding: @fake-table-header-padding @fake-table-padding-left;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.line {
+		padding: @fake-table-line-padding @fake-table-padding-left;
+		border-bottom: 1px solid @border-color;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		a {
+			color: @aquamarine-color;
+		}
+	}
+
+	a {
+		float: right;
+		line-height: @icon-size;
+	}
+
+	.header-list-counter {
+		color: #aeaeae;
+		float: right;
+		font-size: 14px;
+		font-weight: normal;
 	}
 }
 

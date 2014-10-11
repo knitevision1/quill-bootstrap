@@ -8,7 +8,7 @@
   border: 1px solid #cecece;
 }
 .section-mixin {
-  padding: 30px 18px;
+  padding: 30px 0;
   border-bottom: 1px solid #cecece;
 }
 .input-mixin {
@@ -40,12 +40,16 @@
 .button-mixin {
   padding: 13px 25px;
   font-size: 14px;
-  background: #737373;
   border-radius: 5px;
 }
 .fa-caret-mixin {
   color: #737373;
   font-size: 1.3em;
+}
+.transition-mixin {
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
 }
 @media screen and (min-width: 768px) {
   .navbar-nav {
@@ -88,6 +92,12 @@
     right: 50px !important;
   }
 }
+@media screen and (max-width: 768px) {
+  .start-activity-wrapper .button-green {
+    float: left;
+    margin-top: 20px;
+  }
+}
 /* ==========================================================================
    Font embedding
    ========================================================================== */
@@ -105,25 +115,39 @@ h6 {
   margin: 0;
 }
 section {
-  padding: 30px 18px;
+  padding: 30px 0;
   border-bottom: 1px solid #cecece;
 }
-button {
+button:not(.select-mixin) {
   padding: 13px 25px;
   font-size: 14px;
-  background: #737373;
   border-radius: 5px;
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+  border: 0;
+  font-weight: bold;
 }
-button:focus {
+button:not(.select-mixin):focus {
   outline: none;
 }
 .button-select {
   text-align: left;
   width: 100%;
 }
+.button-gray {
+  background-color: #737373;
+  color: #fff;
+}
+.button-gray:hover {
+  background-color: #616161;
+}
 .button-green {
   background-color: #5bc1a9;
-  margin: 20px 0;
+  color: #fff;
+}
+.button-green:hover {
+  background-color: #44b49a;
 }
 /* ==========================================================================
    Navbar styles
@@ -316,6 +340,28 @@ select:focus {
 .tab-subnavigation-wrapper ul li a.active {
   background: #e6e6e6;
 }
+.student-subnavigation {
+  padding: 12px 0;
+}
+.student-subnavigation a {
+  font-size: 14px;
+  color: #999;
+}
+.student-subnavigation a:hover {
+  text-decoration: none;
+}
+.student-subnavigation span {
+  line-height: 24px;
+}
+.student-subnavigation img {
+  margin-right: 9px;
+}
+.student-course-info a {
+  margin-right: 50px;
+}
+.student-course-info a:last-child {
+  margin-right: 0;
+}
 .tab-subnavigation-breadcrumb-wrapper {
   padding: 8px 0;
   background: #fff;
@@ -395,6 +441,9 @@ select:focus {
 .title {
   font-size: 14px;
 }
+.title-v-centered {
+  line-height: 40px;
+}
 .title-not-started {
   line-height: 40px;
   position: static;
@@ -428,6 +477,7 @@ select:focus {
   border: none;
   color: #fff;
   font-weight: bold;
+  margin-top: 20px;
 }
 #activity-planner .select-box-trigger {
   width: auto;
@@ -581,6 +631,52 @@ select:focus {
   margin: 0 auto;
   position: relative;
   bottom: 1px;
+}
+/* ==========================================================================
+   Student Page Styles
+   ========================================================================== */
+.start-activity-wrapper button {
+  float: right;
+}
+.student-page .section-header {
+  margin-bottom: 30px;
+}
+/* ==========================================================================
+   Fake table styles
+   ========================================================================== */
+.fake-table {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.fake-table:last-child {
+  margin-bottom: 0;
+}
+.fake-table .header {
+  background-color: #e6e6e6;
+  padding: 12px 12px;
+  color: #000;
+  font-weight: bold;
+}
+.fake-table .line {
+  padding: 10px 12px;
+  border-bottom: 1px solid #cecece;
+}
+.fake-table .line:last-child {
+  border-bottom: 0;
+}
+.fake-table .line a {
+  color: #308183;
+}
+.fake-table a {
+  float: right;
+  line-height: 40px;
+}
+.fake-table .header-list-counter {
+  color: #aeaeae;
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
 }
 /* ==========================================================================
    Pagination

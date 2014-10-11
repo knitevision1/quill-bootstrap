@@ -6201,7 +6201,7 @@ button.close {
   border: 1px solid #cecece;
 }
 .section-mixin {
-  padding: 30px 18px;
+  padding: 30px 0;
   border-bottom: 1px solid #cecece;
 }
 .input-mixin {
@@ -6233,10 +6233,14 @@ button.close {
 .button-mixin {
   padding: 13px 25px;
   font-size: 14px;
-  background: #737373;
   border-radius: 5px;
 }
 .fa-caret-mixin {
   color: #737373;
   font-size: 1.3em;
+}
+.transition-mixin {
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
 }
