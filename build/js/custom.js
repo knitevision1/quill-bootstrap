@@ -1,13 +1,23 @@
 $(document).ready(function(){
+
 	$("#activity-planner table thead .fa").hide();
 
-	$("#activity-planner table thead th").mouseover(function(){
-		$(".fa", this).show();
+
+	$("#activity-planner table thead th").on('click', function(){
+		$(this).addClass("active");
 	});
 
-	$("#activity-planner table thead th").mouseleave(function(){
-		$(".fa", this).hide();
+	$("#activity-planner table thead th").on('click', function(){
+		$(".fa", this).toggleClass("fa-caret-up fa-caret-down");
 	});
+
+	if ($("#activity-planner table thead th").hasClass("active")) {
+		$(".fa", this).show();
+	}
+
+	else {
+		$(".fa", this).hide();
+	}
 
 });
 
