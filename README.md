@@ -1,9 +1,11 @@
-### Issues list (*Vlad*)
+### Issues list (*Vlad*) / 23.10.2014
 
 #### New
 
-* Added active class on click for the table head column
-* Added toggling between up and down arrows on click
+* Finished the Manage Class pages
+* Got rid of all junk in the repo
+* Added some borders on active and focus states for inputs
+* Added box-shadow for active state on buttons
 
 ###To-do and Issues list (*Peter*)
 
