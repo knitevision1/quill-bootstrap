@@ -6209,7 +6209,7 @@ button.close {
   border: 1px solid #cecece;
   color: #000;
   font-size: 14px;
-  padding: 12px;
+  padding: 9px 12px;
 }
 .select-mixin {
   border-radius: 5px;
@@ -6231,7 +6231,7 @@ button.close {
   border: 1px solid #cecece;
 }
 .button-mixin {
-  padding: 13px 25px;
+  padding: 10px 25px;
   font-size: 14px;
   border-radius: 5px;
 }

@@ -27,7 +27,17 @@ module.exports = function(grunt){
       includereplace: {
         files: [ '*.html', 'includes/*.html' ],
         tasks: ['includereplace']
-	  }
+	   }
+    },
+
+    cssmin: {
+      minify: {
+        expand: true,
+        cwd: 'build/css/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'build/css/',
+        ext: '.min.css'
+      }
     }
 
   });
@@ -35,6 +45,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-include-replace');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.registerTask('default', ['includereplace', 'less', 'watch']);
   grunt.registerTask('production', ['includereplace', 'less', 'watch']);
 }
