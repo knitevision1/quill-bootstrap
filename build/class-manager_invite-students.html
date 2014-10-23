@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Uladzislau task</title>
+
+    <!-- Bootstrap -->
+
+    <link href="../build/css/jquery-ui.css" rel="stylesheet">
+    <link href="../build/css/bootstrap.css" rel="stylesheet">
+    <link href="../build/css/custom.css" rel="stylesheet">
+    <link href="../build/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+
+						<a href="#" class="image-brand">
+							<img src="images/logo.png" alt="">
+						</a>
+
+					</div> <!-- //.navbar-header -->
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+				    <div class="collapse navbar-collapse" id="collapsed-navbar-content">
+				    	<ul class="nav navbar-nav">
+							<li><a href="">About</a></li>
+			    			<li><a href="">Community</a></li>
+			    			<li><a href="">Support</a></li>
+			    			<li><a href=""><img src="images/user-pic.png" alt=""><i class="fa fa-caret-down"></i></a></li>		    			
+				    	</ul>
+				    </div>	
+
+				</div> <!-- //.container -->
+			</nav> <!-- //.navbar -->		
+
+			<div id="page-content-wrapper">
+
+			
+				<div class="row">
+					<div class="col-xs-12 col-xl-12">
+						<!-- Nav tabs -->
+
+						<div class="container">	
+
+							<ul class="nav nav-tabs tabs-navigation-list" role="tablist">
+
+								<li>
+									<a href="#scorebook" id="first-tab" role="tab" data-toggle="tab">Scorebook</a>
+								</li>
+
+								<li>
+									<a href="#portfolio" role="tab" data-toggle="tab">Portfolio</a>
+								</li>
+
+								<li>
+									<a href="#activity-planner" role="tab" data-toggle="tab">Activity Planner</a>
+								</li>
+
+								<li class="active">
+									<a href="#class-manager" role="tab" data-toggle="tab">Class Manager</a>
+								</li>
+
+							</ul>
+
+						</div> <!-- //.container -->	
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+
+															<div class="tab-pane" id="scorebook">
+							  	
+								<div class="tab-subnavigation-wrapper">
+
+									<div class="container">
+
+										<ul>
+											<li><a href="" class="active">Student View</a></li>
+											<li><a href="">Activity View</a></li>
+											<li><a href="">Writing Review</a></li>
+										</ul>
+
+									</div> <!-- //.container -->
+										
+								</div> <!-- //.tab-subnavigation-wrapper -->
+
+
+								<!-- ==========================================================================
+									   Icons legend
+									========================================================================== -->
+
+								<div class="container">
+					
+									<section class="section-content-wrapper">
+
+										<div class="row">
+
+											<!-- wrapping the contents of sections and letting them have 75% width -->
+											<div class="col-xs-12 col-xl-12 no-pl"> 
+
+												<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-5 button-select-wrapper select-white-wrapper">
+
+													<div class="button-select">
+														<button type="button" class="select-mixin select-white" data-toggle="dropdown">
+														Placeholder Classroom Select
+														<i class="fa fa-caret-down"></i>
+														</button>
+
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="test.html">Dropdown link</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+
+													</div>
+
+												</div> <!-- //.col-xs-12 -->
+
+												<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 button-select-wrapper select-gray-wrapper">
+
+													<div class="button-select">
+														<button type="button" class="select-mixin select-gray" data-toggle="dropdown">
+														All Units
+														<i class="fa fa-caret-down"></i>
+														</button>
+
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="/test.html">Dropdown link</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+														
+													</div>
+													
+												</div><!-- //.col-xs-12 -->		
+
+											</div>	<!-- //.col-xs-9 (parent) -->
+
+										</div><!-- //.row -->
+
+										<div class="icons-wrapper icon-legend">
+
+											<div class="row">
+
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 no-pl">
+
+													<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+														<div class="icon-wrapper icon-green"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title">At Proficiency</p>
+															<p class="explanation">100-76%</p>
+														</div>
+
+													</div> <!-- //first-col -->
+
+													<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+														<div class="icon-wrapper icon-orange"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title">Near Proficiency</p>
+															<p class="explanation">100-76%</p>
+														</div>
+
+													</div> <!-- //second-col -->
+
+													<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+
+														<div class="icon-wrapper icon-red"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title">Not Proficient</p>
+															<p class="explanation">100-76%</p>
+														</div>
+
+													</div> <!-- //third-col-->
+
+													<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+
+														<div class="icon-wrapper icon-gray"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title title-not-started">Not Started</p>
+														</div>
+
+													</div> <!-- //fourth-col -->
+													
+												</div> <!-- //.col-xs-9 (parent) -->
+
+												<div class="col-xs-12 col-md-12 col-lg-2 col-xl-2">
+
+													<div class="how-we-grade">
+														<p class="title title-not-started">
+															<a href="#">How We Grade</a>
+															<a href=""><i class="fa fa-long-arrow-right"></i></a>
+														</p> <!-- //.how-we-grade -->
+													</div>
+
+												</div> <!-- //.col-xs-3 -->
+
+											</div> <!-- //.row -->
+
+										</div> <!-- //.icons-wrapper -->
+
+									</section>
+								</div> <!-- //.container -->
+
+									
+
+
+
+								<!-- ==========================================================================
+									   First section
+									========================================================================== -->
+								
+								<div class="container">
+
+									<section>
+
+										<h3 class="student-name">Peter Gault</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-green icon-pencil" ></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div id="tooltip-test" class="icon-wrapper icon-green icon-puzzle" data-toggle="tooltip" data-placement="left" title="<h1>Capitalize Dates and Names of People</h1><p>App: Sentence Shuffle</p> <p>CCSS: 1.2a. USe capitalization for dates and names of people.</p> <p>Retries: 3 attempts</p>"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-flag"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Second section
+									========================================================================== -->
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Ryan Novas</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-flag"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div><!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Third section
+									========================================================================== -->
+
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Caroline Smith</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+
+												</div> <!-- //.icon-row -->
+
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+
+												</div> <!-- //.icon-row -->
+
+											</div><!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Fourth section
+									========================================================================== -->
+
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Sarah Jones</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row">
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div>	<!-- //.row -->
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+
+								<!-- ==========================================================================
+									   Fifth section
+									========================================================================== -->
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Alex Redmond</h3>
+
+									</section>
+									
+								</div> <!-- //.container -->
+
+							</div> <!-- //.tab-pane-active -->			  
+
+															<div class="tab-pane" id="portfolio">
+							  	
+								<div class="tab-subnavigation-wrapper">
+
+									<div class="container">
+
+										<ul>
+											<li><a href="" class="active">Student View</a></li>
+											<li><a href="">Activity 666 View</a></li>
+											<li><a href="">Writing Review</a></li>
+										</ul>
+
+									</div> <!-- //.container -->
+										
+								</div> <!-- //.tab-subnavigation-wrapper -->
+
+
+								<!-- ==========================================================================
+									   Icons legend
+									========================================================================== -->
+
+								<div class="container">
+					
+									<section class="section-content-wrapper">
+
+										<div class="row">
+
+											<!-- wrapping the contents of sections and letting them have 75% width -->
+											<div class="col-xs-9 col-xl-9 no-pl"> 
+
+												<div class="col-xs-12 col-md-5 col-lg-5 col-xl-5 no-pl">
+
+													<select id="classroom-select-2" class="select-white">
+
+														<option value="Lala">Placeholder Classroom Name</option>
+														<option value="Fa">fsdff</option>
+														<option value="fdsfdsf">fsdfsdf</option>
+
+													</select>
+
+												</div> <!-- //.col-xs-12 -->
+
+												<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 no-pl">
+
+													<select id="units-select-2" class="select-gray">
+
+														<option value="Lala">All Units</option>
+														<option value="Fa">fdsfsf</option>
+														<option value="fds">sdfdsf</option>
+
+													</select>
+													
+												</div><!-- //.col-xs-12 -->		
+
+											</div>	<!-- //.col-xs-9 (parent) -->
+
+										</div><!-- //.row -->
+
+										<div class="icons-wrapper icon-legend">
+
+											<div class="row no-pl">
+
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 no-pl">
+
+													<div class="col-xs-6 col-sm-3 col-xl-3 no-pl">
+														<div class="icon-wrapper icon-green"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title">At Proficiency</p>
+															<p class="explanation">100-76%</p>
+														</div>
+
+													</div> <!-- //first-col -->
+
+													<div class="col-xs-6 col-sm-3 col-xl-3 no-pl">
+														<div class="icon-wrapper icon-orange"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title">Near Proficiency</p>
+															<p class="explanation">100-76%</p>
+														</div>
+
+													</div> <!-- //second-col -->
+
+													<div class="col-xs-6 col-sm-3 col-xl-3 no-pl">
+
+														<div class="icon-wrapper icon-red"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title">Not Proficient</p>
+															<p class="explanation">100-76%</p>
+														</div>
+
+													</div> <!-- //third-col-->
+
+													<div class="col-xs-6 col-sm-3 col-xl-3 no-pl">
+
+														<div class="icon-wrapper icon-gray"></div>
+
+														<div class="icons-description-wrapper">
+															<p class="title title-not-started">Not Started</p>
+														</div>
+
+													</div> <!-- //fourth-col -->
+													
+												</div> <!-- //.col-xs-9 (parent) -->
+
+												<div class="col-xs-12 col-md-12 col-lg-2 col-xl-2 no-pl no-pr">
+
+													<div class="how-we-grade">
+														<p class="title title-not-started">
+															<a href="#">How We Grade</a>
+															<a href=""><i class="fa fa-long-arrow-right"></i></a>
+														</p> <!-- //.how-we-grade -->
+													</div>
+
+												</div> <!-- //.col-xs-3 -->
+
+											</div> <!-- //.row -->
+
+										</div> <!-- //.icons-wrapper -->
+
+									</section>
+								</div> <!-- //.container -->
+
+									
+
+
+
+								<!-- ==========================================================================
+									   First section
+									========================================================================== -->
+								
+								<div class="container">
+
+									<section>
+
+										<h3 class="student-name">Peter Gault</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row">
+
+													<div class="icon-wrapper icon-green icon-pencil" ></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div id="tooltip-test" class="icon-wrapper icon-green icon-puzzle" data-toggle="tooltip" data-placement="left" title="<h1>Capitalize Dates and Names of People</h1><p>App: Sentence Shuffle</p> <p>CCSS: 1.2a. USe capitalization for dates and names of people.</p> <p>Retries: 3 attempts</p>"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row icon-last-row">
+
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-flag"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Second section
+									========================================================================== -->
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Ryan Novas</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row">
+
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-flag"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row">
+
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-flag"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+
+												</div>
+
+												<div class="icon-row icon-last-row">
+
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-flag"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-flag"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div><!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Third section
+									========================================================================== -->
+
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Caroline Smith</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row">
+
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-green icon-pencil"></div>
+													<div class="icon-wrapper icon-green icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-pencil"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-orange icon-puzzle"></div>
+													<div class="icon-wrapper icon-red icon-pencil"></div>
+													<div class="icon-wrapper icon-red icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+
+												</div> <!-- //.icon-row -->
+
+
+												<div class="icon-row icon-last-row">
+
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+													<div class="icon-wrapper icon-gray icon-puzzle"></div>
+
+												</div> <!-- //.icon-row -->
+
+											</div><!-- //.col-xs-12 -->
+
+										</div> <!-- //.row -->	
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+								<!-- ==========================================================================
+									   Fourth section
+									========================================================================== -->
+
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Sarah Jones</h3>
+
+										<div class="row">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="icon-row icon-first-row icon-last-row">
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+													<div class="icon-wrapper icon-gray icon-pencil"></div>
+												</div>
+
+											</div> <!-- //.col-xs-12 -->
+
+										</div>	<!-- //.row -->
+
+									</section>
+
+								</div> <!-- //.container -->
+
+
+
+								<!-- ==========================================================================
+									   Fifth section
+									========================================================================== -->
+
+								<div class="container">
+								
+									<section>
+
+										<h3 class="student-name">Alex Redmond</h3>
+
+									</section>
+									
+								</div> <!-- //.container -->
+
+							</div> <!-- //.tab-pane-active -->			 
+								
+															<div class="tab-pane" id="activity-planner">
+							  	
+								<div class="tab-subnavigation-breadcrumb-wrapper">
+
+									<div class="container">
+
+										<ul>
+											
+										    <div class="row">
+
+										        <div id="crumbs">
+													<ul>
+														<li><a href="#1" class="active">Select Activities</a></li>
+														<li><a href="#2">Assign Activities</a></li>
+													</ul>
+												</div>
+
+											</div>
+											   
+										</ul>
+
+									</div> <!-- //.container -->
+										
+								</div> <!-- //.tab-subnavigation-wrapper -->
+									
+								<!-- ==========================================================================
+									 Progress tracker
+									========================================================================== -->	
+
+
+								<div class="container">
+									<section class="section-content-wrapper">
+
+										<div class="bs-wizard">
+                
+							                <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+							                  <div class="progress"><div class="progress-bar"></div></div>
+							                  <a href="#" class="bs-wizard-dot"></a>
+							                  <div class="text-center bs-wizard-info">Select Activities</div>
+							                </div>
+							                
+							                <div class="col-xs-3 bs-wizard-step disabled"><!-- disabled -->
+												<div class="progress"><div class="progress-bar"></div></div>
+												<a href="#" class="bs-wizard-dot"></a>
+												<div class="text-center bs-wizard-info">Assign Activities</div>
+							                </div>
+							                
+							                
+							            </div>
+									</section>
+								</div>
+
+
+								<!-- ==========================================================================
+									   Create a new unit
+									========================================================================== -->
+
+								<div class="container">
+					
+									<section class="section-content-wrapper">
+
+									<div class="col-xs-12 col-md-9 col-sm-9 col-xl-9 no-pl">
+										<h3 class="section-header">Create a New Unit</h3>
+									</div>	
+
+										<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 no-pl no-pr">
+
+											<div class="how-we-grade">
+												<p class="title title-not-started">
+													<a href="#">What's a Unit?</a>
+													<a href=""><i class="fa fa-long-arrow-right"></i></a>
+												</p> <!-- //.how-we-grade -->
+											</div>
+
+										</div> <!-- //.col-xs-3 -->
+
+										<input type="text" placeholder="e.g. Learning How to Use Nouns">
+									</section>
+
+
+									<section>
+										<h3 class="section-header">Select Activities</h3>
+
+										<input type="text" placeholder="Select Activities">
+										<button class="button-gray">Search</button>
+
+										<div class="row activity-page-dropdown-wrapper">
+
+											<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+
+												<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 no-pl">
+													<div class="button-select">
+														<button type="button" class="select-mixin select-gray button-select button-select-wrapper" data-toggle="dropdown">
+														Sort by App
+														<i class="fa fa-caret-down"></i>
+														</button>
+
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="/test.html">Dropdown link</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-3 no-pl">
+													<div class="button-select">
+														<button type="button" class="select-mixin select-gray button-select button-select-wrapper" data-toggle="dropdown">
+														Sort by Level
+														<i class="fa fa-caret-down"></i>
+														</button>
+
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="/test.html">Dropdown linkaaaaaaaaaaaaaaaaaa</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 no-pl">
+													<div class="button-select">
+														<button type="button" class="select-mixin select-gray button-select button-select-wrapper" data-toggle="dropdown">
+														Sort by Concept
+														<i class="fa fa-caret-down"></i>
+														</button>
+
+														<ul class="dropdown-menu" role="menu">
+															<li><a href="/test.html">Dropdown link</a></li>
+															<li><a href="#">Dropdown link</a></li>
+														</ul>
+													</div>
+												</div>
+
+											</div>	
+
+										</div>
+
+										<table class="table">
+
+											<thead>
+												<tr>
+													<th><img src="images/icon-check.png" alt=""></th>
+													<th>App<i class="fa fa-caret-up"></i></th>
+													<th>Activity<i class="fa fa-caret-up"></i></th>
+													<th>Standard Level<i class="fa fa-caret-up"></i></th>
+													<th class="active">Concept<i class="fa fa-caret-up"></i></th>
+												</tr>
+											</thead>
+
+											<tbody>
+
+											<!-- ==========================================================================
+												   Commentary for checkboxes
+												========================================================================== -->
+
+												<!-- Checkbox and their label have to have the same ID, otherwise, checkbox will not be checked. Also, the label is empty, but it has to be here since without it checkbox will not appear at all. That's a tricky way, but works for all browsers -->
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox1" class="css-checkbox">
+														<label for="checkbox1" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox2" class="css-checkbox">
+														<label for="checkbox2" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox3" class="css-checkbox">
+														<label for="checkbox3" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox4" class="css-checkbox">
+														<label for="checkbox4" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox5" class="css-checkbox">
+														<label for="checkbox5" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox6" class="css-checkbox">
+														<label for="checkbox6" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox7" class="css-checkbox">
+														<label for="checkbox7" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox8" class="css-checkbox">
+														<label for="checkbox8" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox9" class="css-checkbox">
+														<label for="checkbox9" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox10" class="css-checkbox">
+														<label for="checkbox10" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox11" class="css-checkbox">
+														<label for="checkbox11" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox12" class="css-checkbox">
+														<label for="checkbox12" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox13" class="css-checkbox">
+														<label for="checkbox13" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox14" class="css-checkbox">
+														<label for="checkbox14" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox15" class="css-checkbox">
+														<label for="checkbox15" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-flag-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox16" class="css-checkbox">
+														<label for="checkbox16" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox17" class="css-checkbox">
+														<label for="checkbox17" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+												<tr>
+													<td>
+														<input type="checkbox" name="checkboxG1" id="checkbox18" class="css-checkbox">
+														<label for="checkbox18" class="css-label"></label>
+													</td>
+													<td><img src="images/icon-puzzle-gray.png"></td>
+													<td>Training for the Gold (Sport)</td>
+													<td>4</td>
+													<td>Subject-Verb Tense</td>
+												</tr>
+
+											</tbody>
+
+										</table>
+
+
+										<div class="fake-border"></div>
+
+
+										<ul class="pagination">
+											<li><a href="#"><i class="fa fa-caret-left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
+										</ul>
+
+									</section>
+
+									<section class="learning-to-use">
+										<h3 class="section-header">Learning How to Use Nouns</h3>
+										
+										<table class="table">
+
+											<tbody>
+												<tr>
+													<td><img src="images/icon-flag-gray.png" alt=""></td>
+													<td>Training for the Gold</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Past Tense Verbs</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Possessive Nouns</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-pencil-gray.png"></td>
+													<td>Singular and Plural Nouns with Matching Verbs</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+												<tr>
+													<td><img src="images/icon-flag-gray.png" alt=""></td>
+													<td>Referencing an Article</td>
+													<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+												</tr>
+
+											</tbody>
+										</table>
+										<div class="fake-border"></div>
+										<button class="button-green pull-right">Continue</button>
+
+									</section>
+									
+								</div> <!-- //.container -->
+
+
+							</div> <!-- //.tab-pane-active -->			
+
+															<div class="tab-pane active" id="class-manager">
+							  	
+								<div class="tab-subnavigation-wrapper">
+
+									<div class="container">
+
+										<ul>
+											<li><a href="" class="active">Manage Classes</a></li>
+											<li><a href="">Invite Students</a></li>
+											<li><a href="">Create a Class</a></li>
+										</ul>
+
+									</div> <!-- //.container -->
+										
+								</div> <!-- //.tab-subnavigation-wrapper -->
+
+
+
+							
+								<div class="container">
+									<section class="invite-students no-border">
+										<div class="button-select-wrapper select-white-wrapper">	
+											<div class="button-select">
+
+												<button type="button" class="select-mixin select-white" data-toggle="dropdown">
+												Placeholder Classroom Select
+												<i class="fa fa-caret-down"></i>
+												</button>
+
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="test.html">Dropdown link</a></li>
+													<li><a href="#">Dropdown link</a></li>
+												</ul>
+
+											</div>
+										</div>
+
+										<h1 class="section-header">Have Students Create Their Accounts</h1>
+
+										<ol>
+										 	<li>Have students sign up at quill.org/account/new</li>
+										 	<li>Once students sign up, in the "Join My Class" field, <br>they enter the class code <strong>merry-honey</strong></li>
+										</ol>
+
+										<span class="class-code">Class Code</span>
+										<input type="text" class="inactive">
+
+										<h1 class="section-header">Or You Create Student Accounts</h1>
+										<div>
+											The students’ username is their name combined with your<br>
+											class code. For example, John Smith is ‘John.Smith@merry-honey’.<br>
+											<div class="mt-15">	
+												Students passwords are set to thier last names by default.<br>
+												For example, ‘Smith’ (first letter is capitalized).
+											</div>	
+										</div>
+
+										<div class="m-20">
+											<input type="text" placeholder="First Name">
+											<input type="text" placeholder="Last Name">
+											<button class="button-green">Add Student</button>
+										</div>
+
+										<table class="table">
+											<thead>
+												<tr>
+													<th>First Name</th>
+													<th>Last Name</th>
+													<th>Username</th>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>Magdalena</td>
+													<td>Calabrese</td>
+													<td>Magdalena.Calabrese@merry-honey</td>
+												</tr>
+
+												<tr>
+													<td>Magdalena</td>
+													<td>Calabrese</td>
+													<td>Magdalena.Calabrese@merry-honey</td>
+												</tr>
+
+												<tr>
+													<td>Magdalena</td>
+													<td>Calabrese</td>
+													<td>Magdalena.Calabrese@merry-honey</td>
+												</tr>
+
+												<tr>
+													<td>Magdalena</td>
+													<td>Calabrese</td>
+													<td>Magdalena.Calabrese@merry-honey</td>
+												</tr>
+
+												<tr>
+													<td>Magdalena</td>
+													<td>Calabrese</td>
+													<td>Magdalena.Calabrese@merry-honey</td>
+												</tr>
+
+												<tr>
+													<td>Magdalena</td>
+													<td>Calabrese</td>
+													<td>Magdalena.Calabrese@merry-honey</td>
+												</tr>
+
+												<tr>
+													<td>Magdalena</td>
+													<td>Calabrese</td>
+													<td>Magdalena.Calabrese@merry-honey</td>
+												</tr>
+							
+											</tbody>
+										</table>
+									</section>
+
+								</div>	
+	
+
+							</div> <!-- //.tab-content -->
+								
+							 
+					</div> <!-- //.col-xs-12-->
+				</div> <!-- //.row -->
+
+
+			</div> <!-- //#page-content-wrapper -->
+
+	
+	<footer>
+		
+	</footer>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../build/js/bootstrap.min.js"></script>
+        <script src="../build/js/custom.js"></script>
+  </body>
+</html>
