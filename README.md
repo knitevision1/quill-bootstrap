@@ -12,7 +12,7 @@
 
 #### GruntJS
 
-First, you need to install the <a href="gruntjs.com">Grunt JS</a>, run:
+First, you need to install the <a href="http://gruntjs.com">Grunt JS</a>, run:
 
 ```
 npm install -g grunt-cli
@@ -40,6 +40,8 @@ Any changes you make in the build folder will always be overriden each time you 
 
 File in the ```/build``` folder takes a name of the corresponding HTML file from the root folder.
 
+
+
 ##### Purpose of /includes folder.
 
 In any HTML file that lies in the root folder, you will find something like that: ```@@include('includes/foo.html')```. Basically what it does is inserting the contents of the ```includes/foo.html``` file in the corresponding place in the file you've used it with.
@@ -57,12 +59,14 @@ There's a ```foo.html``` file in the root folder, you make 2 includes there: ```
 and the output content of the ```build/foo.html``` will be *"My Name is Username"*.
 
 
+
+
 #### Working with LESS, CSS
 
 Same saving and compiling rules applied to LESS compilation. Each time you change and save any file that lies in the sources```/less``` folder, all the files compile in one CSS file that is in the ```build/css/*.css``` folder.
 
 From the ```Gruntfile.js``` you will see, that the default Bootstrap's styles are compiled to ```build/css/bootstrap.css```, and the custom project styles are compiled to the ```custom.css``` file respectively.
 
-~Believe that's all. Have a nice day~
+*Believe that's all. Have a nice day*
 
 
