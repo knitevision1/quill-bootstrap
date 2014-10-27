@@ -29,13 +29,12 @@ That is basically all. You are ready to work with the current setup.
 
 #### Explanation of folder and project structure
 
-After you've runned ```grunt``` in your command line, you will see a bunch of things happening in the console.
-Error, success messages and all that.
 
 #### Working with HTML
 
 The HTML compile from root and ````/includes``` folders automatically each time you change and save something in any .html file that lies either in root or in ```/includes``` folder. You may want to test it, type something in any root .html file, save it, and in the command line you'll see the information on that change.
 
+*NOTE*
 Any changes you make in the build folder will always be overriden each time you save any .HTML file outside the /build folder.
 
 File in the ```/build``` folder takes a name of the corresponding HTML file from the root folder.
@@ -48,10 +47,16 @@ That is very useful for items that repeat for all the pages, for example ```<hea
 
 **Example**:
 
-There's a "foo.html" file in the root folder, you make 2 includes there: ```bar.html``` and ```bar2.html```. Contents of the ```bar.html``` will be "My", contents of ```bar2.html``` will be "Name" and in the root file itself you write "is Username", and the output content of the ```build/foo.html``` will be "My Name is Username".
+There's a ```foo.html``` file in the root folder, you make 2 includes there: ```bar.html``` and ```bar2.html```. 
+
+* Contents of the ```bar.html``` will be "My"
+* Contents of ```bar2.html``` will be "Name"
+* And in the root file itself you write "is Username"
+
+and the output content of the ```build/foo.html``` will be *"My Name is Username"*.
 
 
-#### Working with LESS, CSS;
+#### Working with LESS, CSS
 
 Same saving and compiling rules applied to LESS compilation. Each time you change and save any file that lies in the sources```/less``` folder, all the files compile in one CSS file that is in the ```build/css/*.css``` folder.
 
