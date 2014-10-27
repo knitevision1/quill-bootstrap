@@ -8,64 +8,55 @@
 * Added box-shadow for active state on buttons
 * Changed top & bottom paddings on inputs and buttons to match the sizes on the PSD
 
-###Bootstrap Guide
+### A quick how to on how to work with this repo
 
-*New to bootstrap? This guide explains how to work on the bootstrap code?*
+#### GruntJS
 
-via npm manager
+First, you need to install the <a href="gruntjs.com">Grunt JS</a>, run:
 
-somekind like npm -g install grunt or something
+```
+npm install -g grunt-cli
 
-after that head over to the folder with the files
+```
 
-then you will have to install the plugins used in grunt
+After that:
 
-so, do npm install -g grunt-cli
+* Head over to the repo's root directory.
+* Install the GruntJS's dependencies with ```npm install```
+* Run Grunt with ```grunt```
 
-then head over to the folder and remove the node_modules folder
+That is basically all. You are ready to work with the current setup.
 
-then run npm install
+#### Explanation of folder and project structure
 
-it will install all the plugins (~20MB)
+After you've runned ```grunt``` in your command line, you will see a bunch of things happening in the console.
+Error, success messages and all that.
 
-then run "grunt"
+#### Working with HTML
 
-in the command line
+The HTML compile from root and ````/includes``` folders automatically each time you change and save something in any .html file that lies either in root or in ```/includes``` folder. You may want to test it, type something in any root .html file, save it, and in the command line you'll see the information on that change.
 
-after that, create a new .html file in the root folder
+Any changes you make in the build folder will always be overriden each time you save any .HTML file outside the /build folder.
 
-touch test.html
+File in the ```/build``` folder takes a name of the corresponding HTML file from the root folder.
 
-it will be empty, and as soon as you save it, the same file will appear in the /build folder
+##### Purpose of /includes folder.
 
-always work ONLY in the root folder, any changes you make in the build folder will be overriden
+In any HTML file that lies in the root folder, you will find something like that: ```@@include('includes/foo.html')```. Basically what it does is inserting the contents of the ```includes/foo.html``` file in the corresponding place in the file you've used it with.
 
-so basically when you are in the root folder, open your test.html and compare it with what you see, for example, in the "student-page.html"
+That is very useful for items that repeat for all the pages, for example ```<head>``` for styles, ```<footer>``` (for footer ? :-D), and stuff like ```navbars```.
 
-the student-page.html file will have this in the beginning:
+**Example**:
 
-@@include('includes/head.html')
-@@include('includes/header.html')
-
-it is basically including the contents of the files that are in the /includes folder
-
-instead of copypasting, I use this
-
-so if you do not need header, do not include it
-
-and in the end all files got @@include('includes/footer.html'), it closes the <body> tag and includes scripts
-
-what come to the stylesheets
-
-all the less files are in the /sources/less
-
-each time you change and save ANY of them they get compiled to 2 CSS files that are in the /build/css folder
-
-bootstrap's default LESS files are named without "custom-" prefix
-
-my styles begin with "custom-" prefix
+There's a "foo.html" file in the root folder, you make 2 includes there: ```bar.html``` and ```bar2.html```. Contents of the ```bar.html``` will be "My", contents of ```bar2.html``` will be "Name" and in the root file itself you write "is Username", and the output content of the ```build/foo.html``` will be "My Name is Username".
 
 
-are you familiar with LESS ?
+#### Working with LESS, CSS;
 
-if no, than editing LESS files make no sense. Just include one more stylesheet to the include/head.html and go write your styles there
+Same saving and compiling rules applied to LESS compilation. Each time you change and save any file that lies in the sources```/less``` folder, all the files compile in one CSS file that is in the ```build/css/*.css``` folder.
+
+From the ```Gruntfile.js``` you will see, that the default Bootstrap's styles are compiled to ```build/css/bootstrap.css```, and the custom project styles are compiled to the ```custom.css``` file respectively.
+
+~Believe that's all. Have a nice day~
+
+
