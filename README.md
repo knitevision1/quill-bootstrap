@@ -34,7 +34,8 @@ That is basically all. You are ready to work with the current setup.
 
 The HTML compile from root and ````/includes``` folders automatically each time you change and save something in any .html file that lies either in root or in ```/includes``` folder. You may want to test it, type something in any root .html file, save it, and in the command line you'll see the information on that change.
 
-*NOTE*
+**NOTE**
+
 Any changes you make in the build folder will always be overriden each time you save any .HTML file outside the /build folder.
 
 File in the ```/build``` folder takes a name of the corresponding HTML file from the root folder.
