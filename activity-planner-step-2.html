@@ -1,0 +1,196 @@
+@@include('includes/head.html')
+@@include('includes/header.html')
+
+	<div id="page-content-wrapper">
+
+		<div class="tab-subnavigation-wrapper">
+
+			<div class="container">
+
+				<ul>
+					<li><a href="" class="active">Create a Unit</a></li>
+					<li><a href="">Explore Units</a></li>
+				</ul>
+
+			</div> <!-- //.container -->
+				
+		</div> <!-- //.tab-subnavigation-wrapper -->
+				
+			
+		<!-- ==========================================================================
+			 Progress tracker
+			========================================================================== -->	
+
+
+		<div class="container">
+
+			<section class="section-content-wrapper no-border">
+
+				<div class="bs-wizard">
+
+		            <div class="col-xs-3 bs-wizard-step disabled"><!-- disabled -->
+		              <div class="progress"><div class="progress-bar"></div></div>
+		              <a href="#" class="bs-wizard-dot"></a>
+		              <div class="text-center bs-wizard-info">Select Activities</div>
+		            </div>
+		            
+		            <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+						<div class="progress"><div class="progress-bar"></div></div>
+						<a href="#" class="bs-wizard-dot"></a>
+						<div class="text-center bs-wizard-info">Assign Activities</div>
+		            </div>
+		            
+		            
+		        </div>
+			</section>
+
+		</div>
+
+
+		<!-- ==========================================================================
+			   Select Students
+			========================================================================== -->
+
+		<div class="container">
+			<section class="select-students">
+				<h1 class="section-header">Select Students</h1>
+				<div class="panel-group" id="accordion">
+
+					<div class="panel panel-default">
+
+						<div class="panel-heading">
+							<h4 class="title">
+								<a href="#classOne" data-toggle="collapse" data-parent="#accordion" >
+									Select Entire Class
+								</a>
+
+								<span class="pull-right panel-select-by-student ph-caret-up">Select by Student</span>	
+
+								<div>
+									<input type="checkbox" name="checkboxG1" id="checkbox1" class="css-checkbox">
+									<label for="checkbox1" class="css-label">An Appetite for Wonder 202</label>
+								</div>
+							</h4>
+						</div> <!-- //.panel-heading -->
+
+						<div id="classOne" class="panel-collapse collapse">
+
+							<div class="panel-body">
+								@@include('includes/panel-1-body.html')
+							</div>
+
+						</div> <!-- //#class-one -->
+
+					</div> <!-- //.panel-default -->
+
+					<div class="panel panel-default">
+
+						<div class="panel-heading">
+							<h4 class="title">
+								<a href="#classTwo" data-toggle="collapse" data-parent="#accordion" >
+									Select Entire Class
+								</a>
+
+								<span class="pull-right panel-select-by-student ph-caret-up">Select by Student</span>	
+
+								<div>
+									<input type="checkbox" name="checkboxG1" id="checkbox1" class="css-checkbox">
+									<label for="checkbox1" class="css-label">An Appetite for Wonder 202</label>
+								</div>
+							</h4>
+						</div> <!-- //.panel-heading -->
+
+						<div id="classTwo" class="panel-collapse collapse">
+
+							<div class="panel-body">
+								@@include('includes/panel-2-body.html')
+							</div>
+
+						</div> <!-- //#class-one -->
+
+					</div> <!-- //.panel-default -->
+
+					<div class="panel panel-default">
+
+						<div class="panel-heading">
+							<h4 class="title">
+								<a href="#classThree" data-toggle="collapse" data-parent="#accordion">
+									Select Entire Class
+								</a>
+
+								<span class="pull-right panel-select-by-student ph-caret-up">Select by Student</span>	
+
+								<div>
+									<input type="checkbox" name="checkboxG1" id="checkbox1" class="css-checkbox">
+									<label for="checkbox1" class="css-label">An Appetite for Wonder 202</label>
+								</div>
+							</h4>
+						</div> <!-- //.panel-heading -->
+
+						<div id="classThree" class="panel-collapse collapse">
+
+							<div class="panel-body">
+								@@include('includes/panel-3-body.html')
+							</div>
+
+						</div> <!-- //#class-one -->
+
+					</div> <!-- //.panel-default -->
+
+				</div>
+
+			</section>
+
+			<section class="assign-dates">
+
+			<h1 class="section-header">Assign Dates for Learning How to Use Nouns</h1>
+
+				<table class="table">
+
+					<tbody>
+
+						<tr>
+							<td><img src="images/icon-flag-gray.png" alt=""></td>
+							<td>Training for the Gold</td>
+							<td>datepicker placeholder</td>
+							<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+						</tr>
+
+						<tr>
+							<td><img src="images/icon-pencil-gray.png"></td>
+							<td>Past Tense Verbs</td>
+							<td>datepicker placeholder</td>
+							<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+						</tr>
+
+						<tr>
+							<td><img src="images/icon-pencil-gray.png"></td>
+							<td>Possessive Nouns</td>
+							<td>datepicker placeholder</td>
+							<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+						</tr>
+
+						<tr>
+							<td><img src="images/icon-pencil-gray.png"></td>
+							<td>Singular and Plural Nouns with Matching Verbs</td>
+							<td>datepicker placeholder</td>
+							<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+						</tr>
+
+						<tr>
+							<td><img src="images/icon-flag-gray.png" alt=""></td>
+							<td>Referencing an Article</td>
+							<td>datepicker placeholder</td>
+							<td><a href=""><img src="images/icon-x-gray.png"></a></td>
+						</tr>
+
+					</tbody>
+				</table>
+
+			</section>
+		</div> <!-- //.container -->
+
+	</div>	
+
+
+@@include('includes/footer.html')
