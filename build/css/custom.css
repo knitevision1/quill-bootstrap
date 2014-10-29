@@ -203,44 +203,6 @@ input.inactive {
 input.inactive:focus {
   border: 1px dashed #5bc1a9;
 }
-input[type=checkbox].css-checkbox {
-  position: absolute;
-  z-index: -1000;
-  left: -1000px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-input[type=checkbox].css-checkbox + label.css-label {
-  padding-left: 28px;
-  height: 23px;
-  display: inline-block;
-  line-height: 23px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 23px;
-  vertical-align: middle;
-  cursor: pointer;
-  position: relative;
-  left: 4px;
-  margin: 0;
-}
-input[type=checkbox].css-checkbox:checked + label.css-label {
-  background-position: 0 -23px;
-}
-label.css-label {
-  background-image: url(../images/checkbox-sprite.png);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 select {
   border-radius: 5px;
   border: 1px solid #cecece;
@@ -1049,6 +1011,135 @@ select:focus {
   font-size: 1.3em;
 }
 /* ==========================================================================
+   Panel styles
+   ========================================================================== */
+.panel-group .panel {
+  margin-bottom: 20px;
+}
+.panel-group .panel:last-child {
+  margin-bottom: 0;
+}
+.panel-default:first-child {
+  margin-top: 20px;
+}
+.panel-body .row {
+  margin-bottom: 20px;
+}
+.panel-body .row:last-child {
+  margin-bottom: 0;
+}
+.panel-body input[type=checkbox].css-checkbox + label.css-label {
+  font-size: 14px;
+  font-weight: normal;
+}
+.panel-heading input[type=checkbox].css-checkbox + label.css-label {
+  font-size: 14px;
+  margin-top: 7px;
+}
+.panel-heading .panel-select-by-student {
+  line-height: 40px;
+  width: 150px;
+}
+.panel-heading .title a {
+  margin-bottom: 7px;
+}
+.ph-caret-up {
+  background-image: url(../images/caret-up.png);
+  background-repeat: no-repeat;
+  background-position-x: 130px;
+  background-position-y: 14px;
+}
+.ph-caret-down {
+  background-image: url(../images/caret-down.png);
+  background-repeat: no-repeat;
+  background-position-x: 130px;
+  background-position-y: 14px;
+}
+.assign-dates table {
+  margin-top: 20px;
+  border-collapse: separate;
+  margin-bottom: 0;
+}
+.assign-dates table tbody {
+  background: #f7f5f5;
+  border: 1px solid #cecece;
+}
+.assign-dates table tbody tr:first-child td:first-child {
+  border-top-left-radius: 5px;
+}
+.assign-dates table tbody tr:first-child td:last-child {
+  border-top-right-radius: 5px;
+}
+.assign-dates table tbody tr:last-child td {
+  border-bottom: 1px solid #cecece;
+}
+.assign-dates table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+.assign-dates table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+.assign-dates table tbody tr th {
+  border-left: 1px solid #cecece;
+  border-bottom: none;
+  border-top: 1px solid #cecece;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+}
+.assign-dates table tbody tr th .fa {
+  float: right;
+  color: #737373;
+  font-size: 1.3em;
+}
+.assign-dates table tbody tr th.active {
+  background: #e6e6e6;
+}
+.assign-dates table tbody tr td:nth-child(1) {
+  width: 5%;
+  text-align: center;
+}
+.assign-dates table tbody tr td:nth-child(2) {
+  width: 70%;
+  text-align: left;
+}
+.assign-dates table tbody tr td:nth-child(3) {
+  width: 20%;
+}
+.assign-dates table tbody tr td:nth-child(4) {
+  width: 5%;
+  border-right: 1px solid #cecece;
+}
+.assign-dates table tbody tr {
+  background: #f7f5f5;
+}
+.assign-dates table tbody tr td {
+  font-size: 14px;
+  padding: 7px;
+}
+.assign-dates table tbody tr td:nth-child(1) {
+  text-align: center;
+  border-left: 1px solid #cecece;
+}
+.assign-dates table tbody tr td:nth-child(2) {
+  text-align: left;
+}
+.assign-dates table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+.assign-dates table tbody tr td:nth-child(4) {
+  text-align: right;
+}
+.assign-dates .table > thead > tr > th,
+.assign-dates .table > tbody > tr > th,
+.assign-dates .table > tfoot > tr > th,
+.assign-dates .table > thead > tr > td,
+.assign-dates .table > tbody > tr > td,
+.assign-dates .table > tfoot > tr > td {
+  vertical-align: middle;
+}
+/* ==========================================================================
    Tooltips
    ========================================================================== */
 .tooltip.in {
@@ -1077,6 +1168,44 @@ select:focus {
 }
 .no-pr {
   padding-right: 0;
+}
+input[type=checkbox].css-checkbox {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 28px;
+  height: 23px;
+  display: inline-block;
+  line-height: 23px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 23px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  left: 4px;
+  margin: 0;
+}
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -23px;
+}
+label.css-label {
+  background-image: url(../images/checkbox-sprite.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #crumbs {
   text-align: center;

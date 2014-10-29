@@ -6,15 +6,15 @@
 // Base class
 .panel {
   margin-bottom: @line-height-computed;
-  background-color: @panel-bg;
-  border: 1px solid transparent;
-  border-radius: @panel-border-radius;
-  .box-shadow(0 1px 1px rgba(0,0,0,.05));
+  background-color: @tab-subnavigation-active-bg;
+  border: 1px solid @border-color;
+  border-radius: 5px;
 }
 
 // Panel contents
 .panel-body {
-  padding: @panel-body-padding;
+  padding: 20px;
+  background: #fff;
   &:extend(.clearfix all);
 }
 
@@ -224,7 +224,7 @@
 
 // Contextual variations
 .panel-default {
-  .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+  .panel-variant(@border-color; @panel-default-text; @tab-subnavigation-active-bg; @border-color);
 }
 .panel-primary {
   .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);

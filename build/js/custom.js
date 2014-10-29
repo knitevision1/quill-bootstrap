@@ -19,7 +19,18 @@ $(document).ready(function(){
 		$(".fa", this).hide();
 	}
 
+	//Panels carets up and down
+
 });
+
+
+	if ($('#test-test').hasClass('collapsed')) {
+		$('#test-test-test').addClass('ph-caret-up')
+	}
+
+	else {
+		$(this).closest('.panel-select-by-student').addClass('ph-caret-down')
+	}
 
 $('#tooltip-test').tooltip({
 	html: 'true'
