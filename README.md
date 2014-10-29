@@ -1,12 +1,13 @@
-### Issues list (*Vlad*) / 23.10.2014
+### Issues list for Josh / 29.10.2014
 
 #### New
 
-* Finished the Manage Class pages
-* Got rid of all junk in the repo
-* Added some borders on active and focus states for inputs
-* Added box-shadow for active state on buttons
-* Changed top & bottom paddings on inputs and buttons to match the sizes on the PSD
+* The file is named ```activity-planner-step-2.html```. I wanted to make it tabbed first, but then decided not to, since you had similar behaviour on other pages and may have already handeled it.
+
+* Checkboxes are not currently checkable. A checkbox requires a unique ID, and the label for it requires the same. Take a look at the Activity Planner page step 1 for reference. They are all clickable there. So I left it for you, maybe you have a quick way to assign unique IDs for ```input``` and ```label```
+
+* I will add the caret manipulation on click tomorrow alongside with the datepicker and green button.
+
 
 ### A quick how to on how to work with this repo
 
