@@ -1063,6 +1063,9 @@ select:focus {
   background-position-x: 130px;
   background-position-y: 14px;
 }
+.assign-dates {
+  padding-bottom: 80px;
+}
 .assign-dates table {
   margin-top: 20px;
   border-collapse: separate;
@@ -1146,6 +1149,10 @@ select:focus {
 .assign-dates .table > tbody > tr > td,
 .assign-dates .table > tfoot > tr > td {
   vertical-align: middle;
+}
+.assign-dates button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* ==========================================================================
    Tooltips
