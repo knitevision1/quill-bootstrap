@@ -195,6 +195,14 @@ input:focus {
   outline: none;
   border: 1px solid #5bc1a9;
 }
+.datepicker-input {
+  height: 26px;
+  width: 148px;
+  background-image: url(../images/icon-calendar.png);
+  background-repeat: no-repeat;
+  background-position-x: 120px;
+  background-position-y: 3px;
+}
 input.inactive {
   background: #f7f5f5;
   width: 120px;
@@ -1101,11 +1109,11 @@ select:focus {
   text-align: center;
 }
 .assign-dates table tbody tr td:nth-child(2) {
-  width: 70%;
+  width: 80%;
   text-align: left;
 }
 .assign-dates table tbody tr td:nth-child(3) {
-  width: 20%;
+  width: 10%;
 }
 .assign-dates table tbody tr td:nth-child(4) {
   width: 5%;
@@ -1372,3 +1380,43 @@ label.css-label {
   pointer-events: none;
 }
 /*END Form Wizard*/
+.ui-datepicker {
+  width: 185px;
+  border-radius: 5px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.ui-datepicker table {
+  background: #fff;
+  border-bottom: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.ui-datepicker .ui-datepicker-header {
+  background: #737373;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.ui-datepicker .ui-datepicker-prev {
+  background-image: url(../images/datepicker-arrow-left.png);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 11px;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-next {
+  background-image: url(../images/datepicker-arrow-right.png);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 11px;
+  cursor: pointer;
+}
+.ui-state-disabled {
+  color: #737373;
+}

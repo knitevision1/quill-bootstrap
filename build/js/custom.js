@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+	if ($('#classOne').hasClass('in')) {
+		$('#test123').addClass('ph-caret-down')
+	}
+
+	else {
+		$('#test123').addClass('ph-caret-up')
+	}
+
+
 	$("#activity-planner table thead .fa").hide();
 
 
@@ -19,18 +28,50 @@ $(document).ready(function(){
 		$(".fa", this).hide();
 	}
 
-	//Panels carets up and down
+	//Datepicker
+
+	$(function() {
+	    $( "#datepicker1" ).datepicker({
+      		selectOtherMonths: true,
+      		dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      		minDate: -20,
+      		maxDate: "+1M +10D" 
+	    });
+
+	    $( "#datepicker2" ).datepicker({
+      		selectOtherMonths: true,
+      		dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      		minDate: -20,
+      		maxDate: "+1M +10D" 
+	    });
+
+	    $( "#datepicker3" ).datepicker({
+      		selectOtherMonths: true,
+      		dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      		minDate: -20,
+      		maxDate: "+1M +10D" 
+	    });
+
+	    $( "#datepicker4" ).datepicker({
+      		selectOtherMonths: true,
+      		dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      		minDate: -20,
+      		maxDate: "+1M +10D",
+      		showOptions: { direction: "left" }
+	    });
+
+	    $( "#datepicker5" ).datepicker({
+      		selectOtherMonths: true,
+      		dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      		minDate: -20,
+      		maxDate: "+1M +10D" 
+	    });
+  	});
 
 });
 
 
-	if ($('#test-test').hasClass('collapsed')) {
-		$('#test-test-test').addClass('ph-caret-up')
-	}
 
-	else {
-		$(this).closest('.panel-select-by-student').addClass('ph-caret-down')
-	}
 
 $('#tooltip-test').tooltip({
 	html: 'true'
