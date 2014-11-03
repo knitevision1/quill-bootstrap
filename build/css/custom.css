@@ -974,6 +974,10 @@ select:focus {
 .grade-select .selecter-selected {
   background-color: #ebebeb;
   width: 140px;
+  max-width: 140px;
+}
+.grade-select .selecter-options {
+  max-width: 140px;
 }
 /* ==========================================================================
    Fake table styles
@@ -1436,7 +1440,6 @@ label.css-label {
   display: block;
   margin: 10px 0;
   z-index: 1;
-  max-width: 180px;
 }
 .selecter:focus {
   box-shadow: none;
@@ -1665,14 +1668,4 @@ label.css-label {
 .selecter-options.scroller .scroller-content {
   max-height: 260px;
   padding: 0;
-}
-@media screen and (max-width: 740px) {
-  .selecter {
-    max-width: 40%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .selecter {
-    max-width: 100%;
-  }
 }
