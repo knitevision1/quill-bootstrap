@@ -68,6 +68,14 @@ $(document).ready(function(){
 	    });
   	});
 
+	//Selects
+
+	//Grade-select
+
+	$( '#grade-select' ).selecter({
+		customClass: "grade-select"
+	});
+
 });
 
 
