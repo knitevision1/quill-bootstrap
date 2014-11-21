@@ -152,6 +152,12 @@ button:not(.select-mixin):active {
 .button-green:hover {
   background-color: #44b49a;
 }
+.button-orange {
+  background-color: #f99f3e;
+}
+.button-orange:hover {
+  background-color: #f88e1b;
+}
 /* ==========================================================================
    Navbar styles
    ========================================================================== */
@@ -452,6 +458,236 @@ select:focus {
 .section-header {
   font-weight: 600;
   font-size: 24px;
+}
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+.home-page-navbar {
+  margin: 0;
+  background-color: #3b3b3b;
+  height: 70px;
+}
+.home-page-navbar .navbar-brand {
+  padding: 13px 0 0 14px;
+}
+.home-page-navbar .navbar-toggle {
+  margin-top: 19px;
+}
+.home-page-navbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.home-page-navbar .home-navbar-list {
+  float: right;
+  list-style-type: none;
+}
+.home-page-navbar .home-navbar-list li {
+  float: left;
+  position: relative;
+  display: block;
+}
+.home-page-navbar .home-navbar-list li:hover {
+  background-color: #222222;
+}
+.home-page-navbar .home-navbar-list li a {
+  padding: 25px 15px;
+  position: relative;
+  display: block;
+  line-height: 20px;
+  color: #fff;
+  font-style: 14px;
+}
+.home-page-navbar .home-navbar-list li a:hover {
+  text-decoration: none;
+}
+.home-page-navbar .home-navbar-list .button-anchor:hover {
+  background-color: #3b3b3b;
+}
+.home-page-navbar .home-navbar-list .button-anchor:hover button {
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.4);
+}
+.home-page-navbar .home-navbar-list .button-anchor a {
+  padding: 16px 15px;
+}
+.home-page-navbar .home-navbar-list .button-anchor button {
+  padding: 8px;
+  position: relative;
+  top: 2px;
+}
+.home-page-navbar .home-navbar-list .button-anchor .button-grey {
+  color: #000;
+}
+@media screen and (max-width: 992px) {
+  .home-page-navbar #home-collapsed-navbar {
+    border-top: none !important;
+    margin-top: 0;
+    box-shadow: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow-y: hidden;
+  }
+  .home-page-navbar .home-navbar-list {
+    float: none;
+    background-color: #3b3b3b;
+    border-top: none;
+    padding-left: 0;
+  }
+  .home-page-navbar .home-navbar-list li {
+    float: none;
+  }
+  .home-page-navbar .home-navbar-list li a {
+    padding: 5px !important;
+  }
+}
+#home-page {
+  background-color: #f7f5f5;
+}
+#home-page section {
+  padding: 35px 200px;
+  text-align: center;
+}
+#home-page section h1 {
+  margin-bottom: 17px;
+}
+#home-page section p {
+  margin-bottom: 17px;
+}
+#home-page .hero {
+  background-image: url(../images/home-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: 70px;
+}
+#home-page .hero .hero-content {
+  padding: 94px 0;
+  text-align: center;
+}
+#home-page .hero h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#home-page .hero p {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+#home-page .stats {
+  background-color: #5cc2aa;
+  padding: 25px 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+}
+#home-page .stats .stat {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  #home-page .stats .stat {
+    margin-top: 20px;
+  }
+}
+#home-page .stats .stats-number {
+  font-size: 24px;
+}
+#home-page .stats .stats-description {
+  font-size: 14px;
+}
+#home-page .apps {
+  margin: 70px auto 30px auto;
+}
+#home-page .apps .app {
+  position: relative;
+}
+#home-page .apps .app .icon-top {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 77px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  background-color: #fff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#home-page .apps .app .icon-top.icon-big-grammar {
+  background-image: url(../images/icons/grammar.png);
+}
+#home-page .apps .app .icon-top.icon-big-writer {
+  background-image: url(../images/icons/writer.png);
+}
+#home-page .apps .app .icon-top.icon-big-proofreader {
+  background-image: url(../images/icons/proofreader.png);
+}
+#home-page .apps .app .icon-top.icon-big-shuffle {
+  background-image: url(../images/icons/shuffle.png);
+}
+#home-page .apps .app .app-inner {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  border: 1px solid #cecece;
+  position: relative;
+  min-height: 322px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#home-page .apps .app .app-inner .coming-soon {
+  position: absolute;
+  bottom: 25px;
+  line-height: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 152px;
+}
+#home-page .apps .app h1 {
+  font-size: 22px;
+  margin-bottom: 17px;
+  text-align: center;
+}
+#home-page .apps .app p {
+  font-size: 14px;
+  text-align: center;
+}
+#home-page .apps .app button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 25px;
+  width: 130px;
+}
+@media screen and (max-width: 992px) {
+  #home-page .apps .app {
+    margin-top: 70px;
+  }
+}
+#home-page .teacher-stories {
+  background-color: #5cc2aa;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+#home-page .teacher-stories .author {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #2e7c6a;
+}
+@media screen and (max-width: 992px) {
+  #home-page section {
+    padding: 35px 120px;
+  }
+}
+#home-page .built-from img {
+  margin: 0 auto 15px auto;
 }
 /* ==========================================================================
    Activity Planner styles

@@ -63,6 +63,14 @@ button:not(.select-mixin) {
 	}
 }
 
+.button-orange {
+	background-color: #f99f3e;
+
+	&:hover {
+		background-color: darken(#f99f3e, 7%);
+	}
+}
+
 /* ==========================================================================
    Navbar styles
    ========================================================================== */
@@ -468,7 +476,290 @@ select {
 }
 
 
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
 
+.home-page-navbar {
+	margin: 0;
+	background-color: #3b3b3b;
+	height: 70px;
+
+	.navbar-brand {
+		padding: 13px 0 0 14px;
+	}
+
+	.navbar-toggle {
+		margin-top: 19px;
+		.icon-bar {
+			background-color: #fff;
+		}
+	}
+
+	.home-navbar-list {
+		float: right;
+		list-style-type: none;
+
+		li {
+			float: left;
+			position: relative;
+			display: block;
+
+			&:hover {
+				background-color: darken(#3b3b3b, 10%);
+			}
+
+			a {
+				padding: 25px 15px;
+				position: relative;
+				display: block;
+				line-height: 20px;
+				color: #fff;
+				font-style: 14px;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.button-anchor {
+			&:hover {
+				background-color: #3b3b3b;
+
+				button {
+					box-shadow: 0 0 0.3rem rgba(0,0,0,0.4);
+				}
+			}
+
+			a {
+				padding: 16px 15px;
+			}
+
+			button {
+				padding: 8px;
+				position: relative;
+				top: 2px;
+			}
+
+			.button-grey {
+				color: #000;
+			}
+		}
+	}
+
+	@media screen and (max-width: 992px) {
+		#home-collapsed-navbar {
+			border-top: none !important;
+			margin-top: 0;
+			box-shadow: none;
+			position: absolute;
+			left: 0;
+			right: 0;
+			overflow-y: hidden;
+			
+		}
+
+		.home-navbar-list {
+			float: none;
+			background-color: #3b3b3b;
+			border-top: none;
+			padding-left: 0;
+
+			li {
+				float: none;
+				
+
+				a {
+					padding: 5px !important;
+				}
+			}
+		}
+	}
+}
+
+#home-page {
+	section {
+		padding: 35px 200px;
+		text-align: center;
+		h1 {
+			margin-bottom: 17px;
+		}
+
+		p {
+			margin-bottom: 17px;
+		}
+	}
+	background-color: #f7f5f5;
+	.hero {
+		background-image: url(../images/home-hero.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: #fff;
+		margin-top: 70px;
+
+		.hero-content {
+			padding: 94px 0;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 28px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 16px;
+			margin-bottom: 35px;
+		}
+	}
+
+	.stats {
+		
+		background-color: #5cc2aa;
+		padding: 25px 0;
+		margin-left: 0;
+		margin-right: 0;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		color: #fff;
+
+		.stat {
+			text-align: center;
+		}
+
+		@media screen and (max-width: @screen-md) {
+			.stat {
+				margin-top: 20px;
+			}
+		}
+
+		.stats-number {
+			font-size: 24px;
+		}
+
+		.stats-description {
+			font-size: 14px;
+		}
+	}
+
+	.apps {
+		margin: 70px auto 30px auto;
+		
+
+		.app {
+			position: relative;
+			.icon-top {
+				position: absolute;
+				top: -40px;
+				width: 80px;
+				height: 77px;
+				border-radius: 5px;
+				border: 1px solid @border-color;
+				background-color: #fff;
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+				z-index: 1;
+				background-repeat: no-repeat;
+				background-position: center;
+
+				&.icon-big-grammar {
+					background-image: url(../images/icons/grammar.png);
+
+				}
+
+				&.icon-big-writer {
+					background-image: url(../images/icons/writer.png);
+
+				}
+
+				&.icon-big-proofreader {
+					background-image: url(../images/icons/proofreader.png);
+
+				}
+
+				&.icon-big-shuffle {
+					background-image: url(../images/icons/shuffle.png);
+
+				}
+			}
+			.app-inner {
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 55px;
+				padding-bottom: 40px;
+				border: 1px solid @border-color;
+				position: relative;
+				min-height: 322px;
+				border-radius: 5px;
+				background-color: #fff;
+
+				.coming-soon {
+					position: absolute;
+					bottom: 25px;
+					line-height: 40px;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					width: 152px;
+				}
+			}
+
+			h1 {
+				font-size: 22px;
+				margin-bottom: 17px;
+				text-align: center;
+			}
+
+			p {
+				font-size: 14px;
+				text-align: center;
+			}
+
+			button {
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: 25px;
+				width: 130px;
+			}
+		}
+
+		@media screen and (max-width: @screen-md) {
+			.app {
+				margin-top: 70px;
+			}
+		}
+	}
+
+	.teacher-stories {
+		background-color: #5cc2aa;
+		text-align: center;
+		color: #fff;
+		border-radius: 5px;
+
+		.author {
+			margin-bottom: 0;
+			font-size: 12px;
+			color: #2e7c6a;
+		}
+	}
+
+	@media screen and (max-width: @screen-md) {
+		section {
+			padding: 35px 120px;
+		}
+	}
+
+	.built-from {
+		img {
+			margin: 0 auto 15px auto;
+		}
+	}
+}
 
 
 /* ==========================================================================
@@ -1440,3 +1731,5 @@ select {
 .no-pr {
 	padding-right: 0;
 }
+
+//Footer
