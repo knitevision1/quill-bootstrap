@@ -601,6 +601,32 @@ select:focus {
 #home-page .apps .app {
   position: relative;
 }
+#home-page .apps .app a {
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+  border: 0;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 25px;
+  width: 130px;
+}
+#home-page .apps .app a:focus {
+  outline: none;
+}
+#home-page .apps .app a:active {
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.7);
+}
+#home-page .apps .app a:hover {
+  text-decoration: none;
+  color: #fff;
+}
 #home-page .apps .app .icon-top {
   position: absolute;
   top: -40px;
@@ -656,14 +682,6 @@ select:focus {
 #home-page .apps .app p {
   font-size: 14px;
   text-align: center;
-}
-#home-page .apps .app button {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: 25px;
-  width: 130px;
 }
 @media screen and (max-width: 992px) {
   #home-page .apps .app {

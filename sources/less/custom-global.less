@@ -650,6 +650,33 @@ select {
 
 		.app {
 			position: relative;
+
+			a {
+				.button-mixin();
+				.transition-mixin();
+
+				&:focus {
+					outline: none;
+				}
+				&:active {
+					box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.7);
+				}
+				border: 0;
+				font-weight: bold;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: 25px;
+				width: 130px;
+
+				&:hover {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+
+
 			.icon-top {
 				position: absolute;
 				top: -40px;
@@ -685,6 +712,7 @@ select {
 
 				}
 			}
+
 			.app-inner {
 				padding-left: 10px;
 				padding-right: 10px;
@@ -716,15 +744,6 @@ select {
 			p {
 				font-size: 14px;
 				text-align: center;
-			}
-
-			button {
-				position: absolute;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-				bottom: 25px;
-				width: 130px;
 			}
 		}
 
