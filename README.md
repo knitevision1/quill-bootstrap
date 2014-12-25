@@ -1,17 +1,6 @@
-### Issues list for Josh / 29.10.2014
+## A quick how to on how to work with this repo
 
-#### New
-
-* The file is named ```activity-planner-step-2.html```. I wanted to make it tabbed first, but then decided not to, since you had similar behaviour on other pages and may have already handeled it.
-
-* Checkboxes are not currently checkable. A checkbox requires a unique ID, and the label for it requires the same. Take a look at the Activity Planner page step 1 for reference. They are all clickable there. So I left it for you, maybe you have a quick way to assign unique IDs for ```input``` and ```label```
-
-* I will add the caret manipulation on click tomorrow alongside with the datepicker and green button.
-
-
-### A quick how to on how to work with this repo
-
-#### GruntJS
+### GruntJS
 
 First, you need to install the <a href="http://gruntjs.com">Grunt JS</a>, run:
 
@@ -28,7 +17,7 @@ After that:
 
 That is basically all. You are ready to work with the current setup.
 
-#### Explanation of folder and project structure
+### Folder and project structure
 
 
 #### Working with HTML
@@ -43,7 +32,7 @@ File in the ```/build``` folder takes a name of the corresponding HTML file from
 
 
 
-##### Purpose of /includes folder.
+#### Purpose of /includes folder.
 
 In any HTML file that lies in the root folder, you will find something like that: ```@@include('includes/foo.html')```. Basically what it does is inserting the contents of the ```includes/foo.html``` file in the corresponding place in the file you've used it with.
 
