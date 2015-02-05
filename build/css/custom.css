@@ -118,6 +118,24 @@ section {
   padding: 30px 0;
   border-bottom: 1px solid #cecece;
 }
+.anchor-block {
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+  padding: 10px 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 0;
+  font-weight: bold;
+}
+.anchor-block:active {
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.7);
+}
+.anchor-block:hover,
+.anchor-block:focus {
+  text-decoration: none;
+  color: #fff;
+}
 button:not(.select-mixin) {
   padding: 10px 25px;
   font-size: 14px;
@@ -157,6 +175,34 @@ button:not(.select-mixin):active {
 }
 .button-orange:hover {
   background-color: #f88e1b;
+}
+.button-red {
+  background-color: #fc3e3b;
+  color: #fff;
+}
+.button-red:hover {
+  background-color: #fc2f2c;
+}
+.button-marine {
+  background-color: #00c2a2;
+  color: #fff;
+}
+.button-marine:hover {
+  background-color: #009e84;
+}
+.button-yellow {
+  background-color: #ea9a1a;
+  color: #fff;
+}
+.button-yellow:hover {
+  background-color: #e09215;
+}
+.button-blue {
+  background-color: #348fdf;
+  color: #fff;
+}
+.button-blue:hover {
+  background-color: #217dcf;
 }
 /* ==========================================================================
    Navbar styles
@@ -464,8 +510,9 @@ select:focus {
    ========================================================================== */
 .home-page-navbar {
   margin: 0;
-  background-color: #3b3b3b;
+  background-color: #00c2a2;
   height: 70px;
+  border-radius: 0;
 }
 .home-page-navbar .navbar-brand {
   padding: 13px 0 0 14px;
@@ -484,20 +531,32 @@ select:focus {
   float: left;
   position: relative;
   display: block;
+  padding: 19px 0;
 }
-.home-page-navbar .home-navbar-list li:hover {
-  background-color: #222222;
+.home-page-navbar .home-navbar-list li:hover a {
+  background-color: #fff;
+  color: #00c2a2;
 }
 .home-page-navbar .home-navbar-list li a {
-  padding: 25px 15px;
+  padding: 6px 11px;
+  margin: 0 2px;
   position: relative;
   display: block;
   line-height: 20px;
   color: #fff;
-  font-style: 14px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
 }
 .home-page-navbar .home-navbar-list li a:hover {
   text-decoration: none;
+}
+.home-page-navbar .home-navbar-list li .sign-up-btn {
+  border: 1px solid #fff;
+  border-radius: 4px;
 }
 .home-page-navbar .home-navbar-list .button-anchor:hover {
   background-color: #3b3b3b;
@@ -522,6 +581,7 @@ select:focus {
     margin-top: 0;
     box-shadow: none;
     position: absolute;
+    margin-top: 9px;
     left: 0;
     right: 0;
     overflow-y: hidden;
@@ -534,44 +594,68 @@ select:focus {
   }
   .home-page-navbar .home-navbar-list li {
     float: none;
+    padding: 5px;
   }
   .home-page-navbar .home-navbar-list li a {
     padding: 5px !important;
   }
+  .home-page-navbar .home-navbar-list li .sign-up-btn {
+    border: none;
+  }
+  .home-page-navbar .home-navbar-list li:hover a {
+    background-color: #00c2a2;
+    color: #fff;
+  }
+  .home-page-navbar .home-navbar-list li:active a {
+    background-color: #fff;
+    color: #00c2a2;
+  }
 }
-#home-page {
+.home-page-navbar.writer-navbar {
+  background-color: #fc3e3b;
+}
+.home-page-navbar.writer-navbar .home-navbar-list li:hover a {
+  color: #fc3e3b;
+}
+.home-page-navbar.dashboard-navbar {
+  background-color: #ea9a1a;
+}
+.home-page-navbar.dashboard-navbar .home-navbar-list li:hover a {
+  color: #ea9a1a;
+}
+.home-page {
   background-color: #f7f5f5;
 }
-#home-page section {
+.home-page section {
   padding: 35px 200px;
   text-align: center;
 }
-#home-page section h1 {
+.home-page section h1 {
   margin-bottom: 17px;
 }
-#home-page section p {
+.home-page section p {
   margin-bottom: 17px;
 }
-#home-page .hero {
+.home-page .hero {
   background-image: url(../images/home-hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
 }
-#home-page .hero .hero-content {
+.home-page .hero .hero-content {
   padding: 94px 0;
   text-align: center;
 }
-#home-page .hero h1 {
+.home-page .hero h1 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-#home-page .hero p {
+.home-page .hero p {
   font-size: 16px;
   margin-bottom: 35px;
 }
-#home-page .stats {
+.home-page .stats {
   background-color: #5cc2aa;
   padding: 25px 0;
   margin-left: 0;
@@ -580,27 +664,27 @@ select:focus {
   border-bottom-right-radius: 5px;
   color: #fff;
 }
-#home-page .stats .stat {
+.home-page .stats .stat {
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  #home-page .stats .stat {
+  .home-page .stats .stat {
     margin-top: 20px;
   }
 }
-#home-page .stats .stats-number {
+.home-page .stats .stats-number {
   font-size: 24px;
 }
-#home-page .stats .stats-description {
+.home-page .stats .stats-description {
   font-size: 14px;
 }
-#home-page .apps {
+.home-page .apps {
   margin: 70px auto 30px auto;
 }
-#home-page .apps .app {
+.home-page .apps .app {
   position: relative;
 }
-#home-page .apps .app a {
+.home-page .apps .app a {
   padding: 10px 25px;
   font-size: 14px;
   border-radius: 5px;
@@ -613,26 +697,22 @@ select:focus {
   left: 0;
   right: 0;
   margin: 0 auto;
-  bottom: 25px;
+  bottom: 35px;
   width: 130px;
 }
-#home-page .apps .app a:focus {
+.home-page .apps .app a:focus {
   outline: none;
 }
-#home-page .apps .app a:active {
+.home-page .apps .app a:active {
   box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.7);
 }
-#home-page .apps .app a:hover {
+.home-page .apps .app a:hover {
   text-decoration: none;
   color: #fff;
 }
-#home-page .apps .app .icon-top {
-  position: absolute;
-  top: -40px;
+.home-page .apps .app .icon-top {
   width: 80px;
   height: 77px;
-  border-radius: 5px;
-  border: 1px solid #cecece;
   background-color: #fff;
   margin: 0 auto;
   left: 0;
@@ -641,70 +721,193 @@ select:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
-#home-page .apps .app .icon-top.icon-big-grammar {
+.home-page .apps .app .icon-top.icon-big-grammar {
   background-image: url(../images/icons/grammar.png);
 }
-#home-page .apps .app .icon-top.icon-big-writer {
+.home-page .apps .app .icon-top.icon-big-writer {
   background-image: url(../images/icons/writer.png);
 }
-#home-page .apps .app .icon-top.icon-big-proofreader {
+.home-page .apps .app .icon-top.icon-big-proofreader {
   background-image: url(../images/icons/proofreader.png);
 }
-#home-page .apps .app .icon-top.icon-big-shuffle {
+.home-page .apps .app .icon-top.icon-big-shuffle {
   background-image: url(../images/icons/shuffle.png);
 }
-#home-page .apps .app .app-inner {
+.home-page .apps .app .app-inner {
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 55px;
-  padding-bottom: 40px;
-  border: 1px solid #cecece;
+  padding-top: 15px;
+  padding-bottom: 45px;
   position: relative;
-  min-height: 322px;
+  min-height: 342px;
   border-radius: 5px;
   background-color: #fff;
 }
-#home-page .apps .app .app-inner .coming-soon {
+.home-page .apps .app .app-inner .coming-soon {
   position: absolute;
-  bottom: 25px;
+  bottom: 35px;
   line-height: 40px;
   left: 0;
   right: 0;
   margin: 0 auto;
   width: 152px;
 }
-#home-page .apps .app h1 {
+.home-page .apps .app h1 {
   font-size: 22px;
   margin-bottom: 17px;
   text-align: center;
 }
-#home-page .apps .app p {
+.home-page .apps .app p {
   font-size: 14px;
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  #home-page .apps .app {
+  .home-page .apps .app {
     margin-top: 70px;
   }
 }
-#home-page .teacher-stories {
+.home-page .teacher-stories {
   background-color: #5cc2aa;
   text-align: center;
   color: #fff;
   border-radius: 5px;
 }
-#home-page .teacher-stories .author {
+.home-page .teacher-stories .author {
   margin-bottom: 0;
   font-size: 12px;
   color: #2e7c6a;
 }
 @media screen and (max-width: 992px) {
-  #home-page section {
+  .home-page section {
     padding: 35px 120px;
   }
 }
-#home-page .built-from img {
+.home-page .built-from img {
   margin: 0 auto 15px auto;
+}
+.home-hero {
+  background-color: #00c2a2;
+  padding: 50px 0 45px 0;
+}
+.home-hero .cta {
+  margin-top: 100px;
+}
+.home-hero .cta h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.home-hero .cta .buttons a {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.home-hero .cta .buttons a:hover {
+  text-decoration: none;
+}
+.home-hero .cta .buttons a:first-child {
+  margin-right: 20px;
+}
+.home-hero .cta .buttons .filled {
+  color: #00c2a2;
+  background-color: #fff;
+}
+.home-hero .proofreader .graphics {
+  background-image: url(../images/proofreader-bg.png);
+  height: 346px;
+  background-repeat: no-repeat;
+}
+.home-hero .proofreader .graphics img {
+  position: relative;
+  left: 92px;
+  top: 45px;
+}
+.home-hero .writer .cta .buttons .filled {
+  color: #fc3e3b;
+}
+.home-hero .dashboard .cta .buttons .filled {
+  color: #ea9a1a;
+}
+.home-hero .one-slide {
+  padding-bottom: 130px;
+}
+.writer-outer {
+  background-color: #fc3e3b;
+}
+.dashboard-outer {
+  background-color: #ea9a1a;
+}
+.home-page-new section {
+  padding: 95px 0 135px 0;
+  border-bottom: 0;
+  text-align: center;
+}
+.home-page-new section .subheader {
+  font-size: 16px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.home-page-new section .subheader.black {
+  color: #3c3b3b;
+}
+.home-page-new section .subheader.dark-yellow {
+  color: #875a12;
+}
+.home-page-new section .subheader.dark-red {
+  color: #c51916;
+}
+.home-page-new section .subheader.bold {
+  font-weight: bold;
+}
+.home-page-new section .header {
+  font-size: 36px;
+  margin-bottom: 45px;
+  font-weight: 600;
+}
+.home-page-new section .header.black {
+  color: #333333;
+}
+.home-page-new section .description {
+  font-size: 21px;
+  margin-bottom: 45px;
+}
+.home-page-new section .description.black {
+  color: #3c3b3b;
+}
+.home-page-new .purpose {
+  background-color: #f1f2f2;
+}
+.home-page-new .common-core {
+  background-color: #ea9a1a;
+  color: #fff;
+}
+.home-page-new .testimonials {
+  background-color: #fc3e3b;
+  color: #fff;
+}
+.home-page-new .get-started {
+  padding: 0;
+  background-image: url(../images/get-started.jpg);
+  background-size: cover;
+  min-height: 485px;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+.home-page-new .get-started a {
+  display: inline-block;
+  width: 130px;
+  margin: 0 auto;
 }
 /* ==========================================================================
    Activity Planner styles

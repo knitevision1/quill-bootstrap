@@ -27,6 +27,23 @@ section {
 
 //Buttons
 
+.anchor-block {
+	.transition-mixin();
+	.button-mixin();
+
+	&:active {
+		box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.7);
+	}
+
+	&:hover, &:focus {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	border: 0;
+	font-weight: bold;
+}
+
 button:not(.select-mixin) {
 	.button-mixin();
 	.transition-mixin();
@@ -68,6 +85,43 @@ button:not(.select-mixin) {
 
 	&:hover {
 		background-color: darken(#f99f3e, 7%);
+	}
+}
+
+.button-red {
+	background-color: @red;
+	color: #fff;
+
+	&:hover {
+		background-color: darken(@red, 3%);
+	}
+}
+
+.button-marine {
+	background-color: @marine;
+	color: #fff;
+
+	&:hover {
+		background-color: darken(@marine, 7%);
+	}
+}
+
+.button-yellow {
+	background-color: @yellow;
+	color: #fff;
+
+	&:hover {
+		background-color: darken(@yellow, 3%);
+	}
+}
+
+
+.button-blue {
+	background-color: @blue;
+	color: #fff;
+
+	&:hover {
+		background-color: darken(@blue, 7%);
 	}
 }
 
@@ -482,8 +536,9 @@ select {
 
 .home-page-navbar {
 	margin: 0;
-	background-color: #3b3b3b;
+	background-color: @marine;
 	height: 70px;
+	border-radius: 0;
 
 	.navbar-brand {
 		padding: 13px 0 0 14px;
@@ -504,22 +559,36 @@ select {
 			float: left;
 			position: relative;
 			display: block;
+			padding: 19px 0;
 
 			&:hover {
-				background-color: darken(#3b3b3b, 10%);
+
+				a {
+					background-color: #fff;
+					color: @marine;
+				}
 			}
 
 			a {
-				padding: 25px 15px;
+				padding: 6px 11px;
+				margin: 0 2px;
 				position: relative;
 				display: block;
 				line-height: 20px;
 				color: #fff;
-				font-style: 14px;
+				font-size: 16px;
+				border: 1px solid transparent;
+				border-radius: 4px;
+				.transition-mixin();
 
 				&:hover {
 					text-decoration: none;
 				}
+			}
+
+			.sign-up-btn {
+				border: 1px solid #fff;
+				border-radius: 4px;
 			}
 		}
 
@@ -554,6 +623,7 @@ select {
 			margin-top: 0;
 			box-shadow: none;
 			position: absolute;
+			margin-top: 9px;
 			left: 0;
 			right: 0;
 			overflow-y: hidden;
@@ -568,17 +638,64 @@ select {
 
 			li {
 				float: none;
+				padding: 5px;
 				
 
 				a {
 					padding: 5px !important;
+				}
+
+				.sign-up-btn {
+					border: none;
+				}
+			
+				&:hover {
+					a {
+						background-color: @marine;
+						color: #fff;
+					}
+				}	
+
+				&:active {
+					a {
+						background-color: #fff;
+						color: @marine;
+					}
+				}
+			}
+		}
+	}
+
+	&.writer-navbar {
+		background-color: @red;
+		
+		.home-navbar-list {
+			li {
+				&:hover {
+					a {
+						color: @red;
+					}
+				}
+			}
+		}
+	}
+
+	&.dashboard-navbar {
+		background-color: @yellow;
+
+		.home-navbar-list {
+			li {
+				&:hover {
+					a {
+						color: @yellow;
+					}
 				}
 			}
 		}
 	}
 }
 
-#home-page {
+.home-page {
 	section {
 		padding: 35px 200px;
 		text-align: center;
@@ -666,7 +783,7 @@ select {
 				left: 0;
 				right: 0;
 				margin: 0 auto;
-				bottom: 25px;
+				bottom: 35px;
 				width: 130px;
 
 				&:hover {
@@ -677,12 +794,8 @@ select {
 
 
 			.icon-top {
-				position: absolute;
-				top: -40px;
 				width: 80px;
 				height: 77px;
-				border-radius: 5px;
-				border: 1px solid @border-color;
 				background-color: #fff;
 				margin: 0 auto;
 				left: 0;
@@ -715,17 +828,16 @@ select {
 			.app-inner {
 				padding-left: 10px;
 				padding-right: 10px;
-				padding-top: 55px;
-				padding-bottom: 40px;
-				border: 1px solid @border-color;
+				padding-top: 15px;
+				padding-bottom: 45px;
 				position: relative;
-				min-height: 322px;
+				min-height: 342px;
 				border-radius: 5px;
 				background-color: #fff;
 
 				.coming-soon {
 					position: absolute;
-					bottom: 25px;
+					bottom: 35px;
 					line-height: 40px;
 					left: 0;
 					right: 0;
@@ -779,6 +891,177 @@ select {
 	}
 }
 
+.home-hero {
+	background-color: @marine;
+	padding: 50px 0 45px 0;
+
+	.cta {
+		margin-top: 100px;
+
+		h1 {
+			font-size: @hero-header-font-size;
+			color: #fff;
+			margin-bottom: 35px;
+		}
+
+		.buttons {
+			a {
+				padding: @hero-btn-padding;
+				font-size: @hero-btn-font-size;
+				color: #fff;
+				border: 2px solid #fff;
+				border-radius: 4px;
+				font-weight: bold;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				&:first-child {
+					margin-right: 20px;
+				}
+			}
+
+			.filled {
+				color: @marine;
+				background-color: #fff;
+			}
+			
+		}
+	}
+
+	.proofreader {
+		.graphics {
+			background-image: url(../images/proofreader-bg.png);
+			height: 346px;
+			background-repeat: no-repeat;
+
+			img {
+				position: relative;
+				left: 92px;
+				top: 45px;
+			}
+		}
+	}
+
+	.writer {
+		.cta {
+			.buttons {
+				.filled {
+					color: @red;
+				}
+			}
+		}
+	}
+
+	.dashboard {
+		.cta {
+			.buttons {
+				.filled {
+					color: @yellow;
+				}
+			}
+		}
+	}
+
+	.one-slide {
+		padding-bottom: 130px;
+	}
+}
+
+.writer-outer {
+	background-color: @red;
+}
+
+.dashboard-outer {
+	background-color: @yellow;
+}
+
+.home-page-new {
+	section {
+		padding: 95px 0 135px 0;
+		border-bottom: 0;
+		text-align: center;
+
+		.subheader {
+			font-size: 16px;
+			margin-bottom: @section-subheader-mb;
+			text-transform: uppercase;
+			font-weight: 400;
+
+			&.black {
+				color: @section-subheader-color;
+			}
+
+			&.dark-yellow {
+				color: @dark-yellow;
+			}
+
+			&.dark-red {
+				color: @dark-red;
+			}
+
+			&.bold {
+				font-weight: bold;
+			}
+		}
+
+		.header {
+			font-size: 36px;
+			margin-bottom: @section-header-mb;
+			font-weight: 600;
+
+			&.black {
+				color: @footer-grey;
+			}
+		}
+
+		.description {
+			font-size: 21px;
+			margin-bottom: @section-description-mb;
+
+			&.black {
+				color: @section-subheader-color;
+			}
+		}
+	}
+
+	.purpose {
+		background-color: @purpose-bg;
+	}
+
+	.common-core {
+		background-color: @yellow;
+		color: #fff;
+	}
+
+	.testimonials {
+		background-color: @red;
+		color: #fff;
+	}
+
+	.get-started {
+		padding: 0;
+		background-image: url(../images/get-started.jpg);
+		background-size: cover;
+		min-height: 485px;
+		display: -webkit-flexbox;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			width: 130px;
+			margin: 0 auto;
+		}
+	}
+}
 
 /* ==========================================================================
    Activity Planner styles

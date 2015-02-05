@@ -76,6 +76,45 @@ $(document).ready(function(){
 		customClass: "grade-select"
 	});
 
+
+	$( '#home-slider' ).slick({
+		dots: true,
+		arrows: false,
+		fade: true,
+		pauseOnHover: false,
+		cssEase: 'linear',
+		speed: 300,
+		autoplay: true,
+		autoplaySpeed: 12000
+	});
+
+	$( '#home-slider' ).on('afterChange', function(event, slick, currentSlide, nextSlide) {
+		var n = $('.home-page-navbar');
+		var h = $('.home-hero');
+
+		if (currentSlide == 0) {
+			n.addClass('proofreader-navbar');
+			h.removeClass('writer-outer');
+			n.removeClass('writer-navbar');
+			n.removeClass('dashboard-navbar');
+			h.removeClass('dashboard-outer');
+		}
+
+		else if (currentSlide == 1) {
+			n.addClass('writer-navbar');
+			h.addClass('writer-outer');
+			n.removeClass('dashboard-navbar');
+			h.removeClass('dashboard-outer');
+		}
+
+		else if (currentSlide == 2) {
+			n.addClass('dashboard-navbar');
+			h.addClass('dashboard-outer');
+			n.removeClass('writer-navbar');
+			h.removeClass('writer-outer');
+		}
+	});
+
 });
 
 
