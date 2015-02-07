@@ -53,6 +53,11 @@
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+@media screen and (min-width: 1200px) {
+  #new-home-page .container {
+    width: 1050px;
+  }
+}
 .home-page-navbar {
   margin: 0;
   background-color: #00c2a2;
@@ -170,7 +175,8 @@
   color: #ea9a1a;
 }
 .home-page {
-  background-color: #f7f5f5;
+  background-color: #f1f2f2;
+  /* keep this variant */
 }
 .home-page section {
   padding: 35px 200px;
