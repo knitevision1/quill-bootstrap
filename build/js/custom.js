@@ -1,32 +1,36 @@
 $(document).ready(function(){
 
-	if ($('#classOne').hasClass('in')) {
-		$('#test123').addClass('ph-caret-down')
+	function tableSortIcons() {
+		if ($('#classOne').hasClass('in')) {
+			$('#test123').addClass('ph-caret-down')
+		}
+
+		else {
+			$('#test123').addClass('ph-caret-up')
+		}
+
+
+		$("#activity-planner table thead .fa").hide();
+
+
+		$("#activity-planner table thead th").on('click', function(){
+			$(this).addClass("active");
+		});
+
+		$("#activity-planner table thead th").on('click', function(){
+			$(".fa", this).toggleClass("fa-caret-up fa-caret-down");
+		});
+
+		if ($("#activity-planner table thead th").hasClass("active")) {
+			$(".fa", this).show();
+		}
+
+		else {
+			$(".fa", this).hide();
+		}
 	}
 
-	else {
-		$('#test123').addClass('ph-caret-up')
-	}
-
-
-	$("#activity-planner table thead .fa").hide();
-
-
-	$("#activity-planner table thead th").on('click', function(){
-		$(this).addClass("active");
-	});
-
-	$("#activity-planner table thead th").on('click', function(){
-		$(".fa", this).toggleClass("fa-caret-up fa-caret-down");
-	});
-
-	if ($("#activity-planner table thead th").hasClass("active")) {
-		$(".fa", this).show();
-	}
-
-	else {
-		$(".fa", this).hide();
-	}
+	tableSortIcons();
 
 	//Datepicker
 
@@ -88,6 +92,7 @@ $(document).ready(function(){
 		autoplaySpeed: 12000
 	});
 
+
 	$( '#home-slider' ).on('afterChange', function(event, slick, currentSlide, nextSlide) {
 		var n = $('.home-page-navbar');
 		var h = $('.home-hero');
@@ -115,8 +120,15 @@ $(document).ready(function(){
 		}
 	});
 
-});
+	$('.tabs-testimonials').tabslet({
+		autorotate: true,
+		delay: 10000,
+		pauseonhover: false,
+		animation: true,
+		active: 1
+	});
 
+});
 
 
 

@@ -881,7 +881,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #000000;
@@ -1392,7 +1392,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 980px;
+    width: 1050px;
   }
 }
 .container-fluid {
@@ -6230,7 +6230,7 @@ button.close {
   border: 1px solid #cecece;
 }
 .button-mixin {
-  padding: 10px 25px;
+  padding: 13px 25px 10px 25px;
   font-size: 14px;
   border-radius: 5px;
 }

@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
 .ul-reset-mixin {
   padding: 0;
   margin: 0;
@@ -38,7 +37,7 @@
   border: 1px solid #cecece;
 }
 .button-mixin {
-  padding: 10px 25px;
+  padding: 13px 25px 10px 25px;
   font-size: 14px;
   border-radius: 5px;
 }
@@ -101,6 +100,78 @@
 /* ==========================================================================
    Font embedding
    ========================================================================== */
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-Light.otf');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-LightItalic.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-RegItalic.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-SemiBold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-Light.eot');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-LightItalic.eot');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-Regular.eot');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-RegItalic.eot');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-SemiBold.eot');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adelle-sans';
+  src: url('../fonts/adelle-sans/AdelleSans-Bold.eot');
+  font-weight: 700;
+  font-style: normal;
+}
 /* ==========================================================================
    Tags
    ========================================================================== */
@@ -122,7 +193,7 @@ section {
   transition: 0.1s ease-out;
   -moz-transition: 0.1s ease-out;
   -webkit-transition: 0.1s ease-out;
-  padding: 10px 25px;
+  padding: 13px 25px 10px 25px;
   font-size: 14px;
   border-radius: 5px;
   border: 0;
@@ -137,7 +208,7 @@ section {
   color: #fff;
 }
 button:not(.select-mixin) {
-  padding: 10px 25px;
+  padding: 13px 25px 10px 25px;
   font-size: 14px;
   border-radius: 5px;
   transition: 0.1s ease-out;
@@ -685,7 +756,7 @@ select:focus {
   position: relative;
 }
 .home-page .apps .app a {
-  padding: 10px 25px;
+  padding: 13px 25px 10px 25px;
   font-size: 14px;
   border-radius: 5px;
   transition: 0.1s ease-out;
@@ -755,11 +826,15 @@ select:focus {
 .home-page .apps .app h1 {
   font-size: 22px;
   margin-bottom: 17px;
+  margin-top: 6px;
   text-align: center;
+  color: #333333;
 }
 .home-page .apps .app p {
   font-size: 14px;
   text-align: center;
+  color: #3c3b3b;
+  font-weight: 500;
 }
 @media screen and (max-width: 992px) {
   .home-page .apps .app {
@@ -796,9 +871,10 @@ select:focus {
   font-size: 24px;
   color: #fff;
   margin-bottom: 35px;
+  font-weight: 700;
 }
 .home-hero .cta .buttons a {
-  padding: 10px 20px;
+  padding: 13px 20px 10px 20px;
   font-size: 16px;
   color: #fff;
   border: 2px solid #fff;
@@ -807,6 +883,7 @@ select:focus {
 }
 .home-hero .cta .buttons a:hover {
   text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
 }
 .home-hero .cta .buttons a:first-child {
   margin-right: 20px;
@@ -814,6 +891,9 @@ select:focus {
 .home-hero .cta .buttons .filled {
   color: #00c2a2;
   background-color: #fff;
+}
+.home-hero .cta .buttons .filled:hover {
+  background: #ffffff;
 }
 .home-hero .proofreader .graphics {
   background-image: url(../images/proofreader-bg.png);
@@ -825,14 +905,33 @@ select:focus {
   left: 92px;
   top: 45px;
 }
+.home-hero .writer .graphics {
+  background-image: url(../images/writer-bg.png);
+  background-repeat: no-repeat;
+  height: 472px;
+}
+.home-hero .writer .graphics img {
+  position: relative;
+  top: 69px;
+}
 .home-hero .writer .cta .buttons .filled {
   color: #fc3e3b;
+}
+.home-hero .dashboard .graphics {
+  background-image: url(../images/dashboard-bg.png);
+  background-repeat: no-repeat;
+  height: 407px;
+}
+.home-hero .dashboard .graphics img {
+  position: relative;
+  left: 90px;
+  top: 40px;
 }
 .home-hero .dashboard .cta .buttons .filled {
   color: #ea9a1a;
 }
 .home-hero .one-slide {
-  padding-bottom: 130px;
+  padding-bottom: 0;
 }
 .writer-outer {
   background-color: #fc3e3b;
@@ -849,7 +948,7 @@ select:focus {
   font-size: 16px;
   margin-bottom: 45px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
 }
 .home-page-new section .subheader.black {
   color: #3c3b3b;
@@ -859,9 +958,6 @@ select:focus {
 }
 .home-page-new section .subheader.dark-red {
   color: #c51916;
-}
-.home-page-new section .subheader.bold {
-  font-weight: bold;
 }
 .home-page-new section .header {
   font-size: 36px;
@@ -888,6 +984,46 @@ select:focus {
 .home-page-new .testimonials {
   background-color: #fc3e3b;
   color: #fff;
+}
+.home-page-new .testimonials .tabs-testimonials ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+.home-page-new .testimonials .tabs-testimonials ul li {
+  display: block;
+  float: left;
+  width: 33%;
+}
+.home-page-new .testimonials .tabs-testimonials ul li.active a {
+  border-color: #fff;
+}
+.home-page-new .testimonials .tabs-testimonials ul li.active img {
+  opacity: 1;
+}
+.home-page-new .testimonials .tabs-testimonials ul a {
+  display: block;
+  border-bottom: 4px solid;
+  border-color: transparent;
+  min-height: 82px;
+}
+.home-page-new .testimonials .tabs-testimonials ul img {
+  opacity: 0.5;
+}
+.home-page-new .testimonials .tabs-testimonials ul img.kipp {
+  margin-top: 10px;
+}
+.home-page-new .testimonials .tabs-testimonials .tab-content {
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 75px;
+  min-height: 170px;
+}
+.home-page-new .testimonials .tabs-testimonials .quote-author {
+  color: #c51916;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .home-page-new .get-started {
   padding: 0;
@@ -1647,6 +1783,83 @@ select:focus {
 }
 .no-pr {
   padding-right: 0;
+}
+footer {
+  background-color: #fff;
+  padding: 80px 0;
+}
+footer ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+footer .wrapper {
+  margin: 0 auto;
+}
+footer .footer-contacts {
+  color: #333333;
+  font-size: 18px;
+  width: 633px;
+  margin: 0 auto;
+}
+footer .footer-contacts li {
+  float: left;
+  margin-right: 20px;
+  margin-left: 21px;
+}
+footer .footer-contacts li:last-child {
+  margin-right: 0;
+}
+footer .footer-social {
+  width: 340px;
+  margin: 0 auto;
+}
+footer .footer-social li {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+footer .footer-social li:last-child {
+  margin-right: 0;
+}
+footer .footer-social li i {
+  color: #aaaaaa;
+  font-size: 32px;
+}
+footer .footer-social li .fa-twitter:hover {
+  color: #55acee;
+}
+footer .footer-social li .fa-facebook:hover {
+  color: #3b5998;
+}
+footer .footer-social li .fa-youtube-play:hover {
+  color: #b31217;
+}
+footer .footer-social li .fa-instagram:hover {
+  color: #3f729b;
+}
+footer .footer-social li .fa-github-alt:hover {
+  color: #333;
+}
+footer .footer-line {
+  margin: 30px auto;
+  display: block;
+}
+footer .footer-new-logo-wrapper {
+  text-align: center;
+  margin: 20px auto 0 auto;
+  width: 93px;
+  height: 33px;
+  background-position: 0 -97px;
+  background-image: url(../images/footer-logos.png);
+}
+footer .footer-new-logo-wrapper a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+footer .footer-new-logo-wrapper:hover {
+  background-position: 0 1px;
 }
 input[type=checkbox].css-checkbox {
   position: absolute;

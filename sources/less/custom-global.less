@@ -2,8 +2,109 @@
    Font embedding
    ========================================================================== */
 
+// Adelle Sans
+// -------------------------------------------------
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,600);
+
+//Light - 200
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-Light.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+//Light - 200 - Italic
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-LightItalic.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+//Normal - 400
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+//Normal - 400 - Italic
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-RegItalic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+//Bold - 600 - Normal
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-SemiBold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+//ExtraBold - 700 Normal
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+//Light - 200
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-Light.eot');
+    font-weight: 200;
+    font-style: normal;
+}
+
+//Light - 200 - Italic
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-LightItalic.eot');
+    font-weight: 200;
+    font-style: italic;
+}
+
+//Normal - 400
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-Regular.eot');
+    font-weight: 400;
+    font-style: normal;
+}
+
+//Normal - 400 - Italic
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-RegItalic.eot');
+    font-weight: 400;
+    font-style: italic;
+}
+
+//Bold - 600 - Normal
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-SemiBold.eot');
+    font-weight: 600;
+    font-style: normal;
+}
+
+//ExtraBold - 700 Normal
+@font-face {
+    font-family: 'adelle-sans';
+    src: url('../fonts/adelle-sans/AdelleSans-Bold.eot');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 
 
 
@@ -849,12 +950,16 @@ select {
 			h1 {
 				font-size: 22px;
 				margin-bottom: 17px;
+				margin-top: 6px;
 				text-align: center;
+				color: #333333;
 			}
 
 			p {
 				font-size: 14px;
 				text-align: center;
+				color: #3c3b3b;
+				font-weight: 500;
 			}
 		}
 
@@ -902,6 +1007,7 @@ select {
 			font-size: @hero-header-font-size;
 			color: #fff;
 			margin-bottom: 35px;
+			font-weight: 700;
 		}
 
 		.buttons {
@@ -915,6 +1021,7 @@ select {
 
 				&:hover {
 					text-decoration: none;
+					background: rgba(255,255,255,0.2);
 				}
 
 				&:first-child {
@@ -925,6 +1032,10 @@ select {
 			.filled {
 				color: @marine;
 				background-color: #fff;
+
+				&:hover {
+					background: rgba(255,255,255,1);
+				}
 			}
 			
 		}
@@ -945,6 +1056,16 @@ select {
 	}
 
 	.writer {
+		.graphics {
+			background-image: url(../images/writer-bg.png);
+			background-repeat: no-repeat;
+			height: 472px;
+			img {
+				position: relative;
+				top: 69px;
+			}
+		}
+
 		.cta {
 			.buttons {
 				.filled {
@@ -955,6 +1076,18 @@ select {
 	}
 
 	.dashboard {
+		.graphics {
+			background-image: url(../images/dashboard-bg.png);
+			background-repeat: no-repeat;
+			height: 407px;
+
+			img {
+				position: relative;
+				left: 90px;
+				top: 40px;
+			}
+		}
+
 		.cta {
 			.buttons {
 				.filled {
@@ -965,7 +1098,7 @@ select {
 	}
 
 	.one-slide {
-		padding-bottom: 130px;
+		padding-bottom: 0;
 	}
 }
 
@@ -987,7 +1120,7 @@ select {
 			font-size: 16px;
 			margin-bottom: @section-subheader-mb;
 			text-transform: uppercase;
-			font-weight: 400;
+			font-weight: 700;
 
 			&.black {
 				color: @section-subheader-color;
@@ -999,10 +1132,6 @@ select {
 
 			&.dark-red {
 				color: @dark-red;
-			}
-
-			&.bold {
-				font-weight: bold;
 			}
 		}
 
@@ -1038,6 +1167,59 @@ select {
 	.testimonials {
 		background-color: @red;
 		color: #fff;
+
+		.tabs-testimonials {
+			ul {
+				list-style-type: none;
+				overflow: hidden;
+
+				li {
+					display: block;
+					float: left;
+					width: 33%;
+
+					&.active {
+						a {
+							border-color: #fff;
+						}
+
+						img {
+							opacity: 1;
+						}
+					}
+				}
+
+				a {
+					display: block;
+					border-bottom: 4px solid;
+					border-color: transparent;
+					min-height: 82px;
+				}
+
+				img {
+					opacity: 0.5;
+
+					&.kipp {
+						margin-top: 10px;
+					}
+				}
+			}
+
+			.tab-content {
+				font-size: 21px;
+				color: #fff;
+				margin-bottom: 75px;
+				min-height: 170px;
+			}
+
+			.quote-author {
+				color: @dark-red;
+				font-size: 16px;
+				margin-top: 30px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
 	}
 
 	.get-started {
@@ -2034,3 +2216,97 @@ select {
 }
 
 //Footer
+footer {
+	background-color: #fff;
+	padding: 80px 0;
+	
+	ul {
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	.wrapper {
+		margin: 0 auto;
+	}
+
+	.footer-contacts {
+		color: @footer-grey;
+		font-size: 18px;
+		width: 633px;
+		margin: 0 auto;
+
+		li {
+			float: left;
+			margin-right: 20px;
+			margin-left: 21px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.footer-social {
+		width: 340px;
+		margin: 0 auto;
+
+		li {
+			width: 20%;
+			float: left;
+			text-align: center;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+
+			i {
+				color: #aaaaaa;
+				font-size: 32px;
+			}
+
+			.fa-twitter:hover {
+				color: #55acee;
+			}
+
+			.fa-facebook:hover {
+				color: #3b5998;
+			}
+
+			.fa-youtube-play:hover {
+				color: #b31217;
+			}
+
+			.fa-instagram:hover {
+				color: #3f729b;
+			}
+
+			.fa-github-alt:hover {
+				color: #333;
+			}
+		}
+	}
+
+	.footer-line {
+		margin: 30px auto;
+		display: block;
+	}
+
+	.footer-new-logo-wrapper {
+		text-align: center;
+		margin: 20px auto 0 auto;
+		width: 93px;
+		height: 33px;
+		background-position: 0 -97px;
+		background-image: url(../images/footer-logos.png);
+
+		a {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+
+		&:hover {
+			background-position: 0 1px;
+		}
+	}
+}
