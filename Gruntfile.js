@@ -15,6 +15,7 @@ module.exports = function(grunt){
         files: {
           'build/css/bootstrap.css': 'sources/less/bootstrap.less',
           'build/css/custom.css': 'sources/less/custom.less',
+          'build/css/custom-home.css': 'sources/less/custom-home.less',
         }
       }
     },
