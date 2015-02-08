@@ -64,7 +64,7 @@
 			display: block;
 			padding: 19px 0;
 
-			&:hover {
+			&:hover:not(.sign-up-wrapper) {
 
 				a {
 					background-color: #fff;
@@ -94,8 +94,14 @@
 				border-radius: 4px;
 				margin-left: 15px;
 				padding: 4px 9px 2px 9px;
+
+				&:hover {
+					background: rgba(255,255,255,0.2);
+				}
 			}
 		}
+
+		
 
 		.button-anchor {
 			&:hover {
@@ -409,6 +415,7 @@
 
 		h1 {
 			font-size: @hero-header-font-size;
+			white-space: nowrap;
 			color: #fff;
 			margin-bottom: 35px;
 			font-weight: 700;
@@ -705,4 +712,9 @@ footer {
 			}
 		}
 	}
+}
+
+.other-pages-navbar {
+	padding: 20px 0 0 0;
+	height: 112px;
 }

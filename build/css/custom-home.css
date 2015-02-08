@@ -100,7 +100,7 @@
   display: block;
   padding: 19px 0;
 }
-.home-page-navbar .home-navbar-list li:hover a {
+.home-page-navbar .home-navbar-list li:hover:not(.sign-up-wrapper) a {
   background-color: #fff;
   color: #00c2a2;
 }
@@ -126,6 +126,9 @@
   border-radius: 4px;
   margin-left: 15px;
   padding: 4px 9px 2px 9px;
+}
+.home-page-navbar .home-navbar-list li .sign-up-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 .home-page-navbar .home-navbar-list .button-anchor:hover {
   background-color: #3b3b3b;
@@ -367,7 +370,8 @@
   margin-top: 84px;
 }
 .home-hero .cta h1 {
-  font-size: 24px;
+  font-size: 32px;
+  white-space: nowrap;
   color: #fff;
   margin-bottom: 35px;
   font-weight: 700;
@@ -585,4 +589,8 @@ footer .footer-contacts li {
 }
 footer .footer-contacts li:last-child {
   margin-left: 0;
+}
+.other-pages-navbar {
+  padding: 20px 0 0 0;
+  height: 112px;
 }
