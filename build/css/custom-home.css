@@ -53,16 +53,32 @@
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+@media screen and (min-width: 992px) {
+  #new-home-page .container {
+    width: 1040px;
+  }
+}
 @media screen and (min-width: 1200px) {
   #new-home-page .container {
-    width: 1050px;
+    width: 1090px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #new-home-page .container {
+    width: 992px;
+  }
+  #new-home-page .home-hero .cta .buttons a {
+    display: block;
+  }
+  #new-home-page .home-hero .cta .buttons a:first-child {
+    margin-bottom: 20px;
   }
 }
 .home-page-navbar {
   margin: 0;
   background-color: #00c2a2;
   height: 130px;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   border-radius: 0;
 }
 .home-page-navbar .navbar-brand {
@@ -89,8 +105,8 @@
   color: #00c2a2;
 }
 .home-page-navbar .home-navbar-list li a {
-  padding: 6px 11px 3px 11px;
-  margin: 0 2px;
+  padding: 4px 11px 2px 11px;
+  margin: 0 5px;
   position: relative;
   display: block;
   line-height: 20px;
@@ -108,6 +124,8 @@
 .home-page-navbar .home-navbar-list li .sign-up-btn {
   border: 1px solid #fff;
   border-radius: 4px;
+  margin-left: 15px;
+  padding: 4px 9px 2px 9px;
 }
 .home-page-navbar .home-navbar-list .button-anchor:hover {
   background-color: #3b3b3b;
@@ -315,7 +333,7 @@
   font-size: 14px;
   text-align: center;
   color: #3c3b3b;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media screen and (max-width: 992px) {
   .home-page .apps .app {
@@ -343,10 +361,10 @@
 }
 .home-hero {
   background-color: #00c2a2;
-  padding: 50px 0 45px 0;
+  padding: 0 0 33px 0;
 }
 .home-hero .cta {
-  margin-top: 100px;
+  margin-top: 84px;
 }
 .home-hero .cta h1 {
   font-size: 24px;
@@ -355,12 +373,16 @@
   font-weight: 700;
 }
 .home-hero .cta .buttons a {
-  padding: 13px 20px 10px 20px;
+  padding: 9px 20px 10px 20px;
   font-size: 16px;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 4px;
   font-weight: bold;
+  width: 140px;
+  display: inline-block;
+  text-align: center;
+  height: 41px;
 }
 .home-hero .cta .buttons a:hover {
   text-decoration: none;
@@ -411,6 +433,10 @@
 .home-hero .dashboard .cta .buttons .filled {
   color: #ea9a1a;
 }
+.home-hero .slick-dots {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
 .home-hero .one-slide {
   padding-bottom: 0;
 }
@@ -421,13 +447,13 @@
   background-color: #ea9a1a;
 }
 .home-page-new section {
-  padding: 95px 0 135px 0;
+  padding: 100px 0 137px 0;
   border-bottom: 0;
   text-align: center;
 }
 .home-page-new section .subheader {
   font-size: 16px;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -450,7 +476,8 @@
 }
 .home-page-new section .description {
   font-size: 21px;
-  margin-bottom: 45px;
+  margin-bottom: 49px;
+  font-weight: 400;
 }
 .home-page-new section .description.black {
   color: #3c3b3b;
@@ -469,17 +496,22 @@
 .home-page-new .testimonials .tabs-testimonials ul {
   list-style-type: none;
   overflow: hidden;
+  margin: 0;
+  -webkit-padding-start: 0;
 }
 .home-page-new .testimonials .tabs-testimonials ul li {
   display: block;
   float: left;
-  width: 33%;
+  width: 28%;
 }
 .home-page-new .testimonials .tabs-testimonials ul li.active a {
   border-color: #fff;
 }
 .home-page-new .testimonials .tabs-testimonials ul li.active img {
   opacity: 1;
+}
+.home-page-new .testimonials .tabs-testimonials ul li:nth-child(2) {
+  margin: 0 8%;
 }
 .home-page-new .testimonials .tabs-testimonials ul a {
   display: block;
@@ -497,12 +529,12 @@
   font-size: 21px;
   color: #fff;
   margin-bottom: 75px;
-  min-height: 170px;
+  min-height: 140px;
 }
 .home-page-new .testimonials .tabs-testimonials .quote-author {
   color: #c51916;
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 17px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -510,19 +542,47 @@
   padding: 0;
   background-image: url(../images/get-started.jpg);
   background-size: cover;
-  min-height: 485px;
-  display: -webkit-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  text-align: center;
+  min-height: 488px;
 }
 .home-page-new .get-started a {
   display: inline-block;
-  width: 130px;
   margin: 0 auto;
+  margin-top: 218px;
+  padding: 15px 0 10px 0;
+}
+.npr .container {
+  padding-right: 0;
+}
+.button-red.big,
+.button-marine.big {
+  height: 52px;
+  width: 194px;
+  font-size: 19px;
+  font-weight: 700;
+}
+.home-page .apps {
+  margin: 46px auto 0 auto;
+}
+.home-page .apps .app h1 {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+#new-home-page .button-yellow,
+#new-home-page .button-blue,
+#new-home-page .button-red {
+  font-weight: 700;
+}
+footer {
+  padding: 87px 0;
+}
+footer .footer-contacts {
+  width: 622px;
+  font-size: 21px;
+}
+footer .footer-contacts li {
+  margin-right: 31px;
+  margin-left: 0;
+}
+footer .footer-contacts li:last-child {
+  margin-left: 0;
 }

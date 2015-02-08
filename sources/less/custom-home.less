@@ -6,17 +6,41 @@
    HOME PAGE
    ========================================================================== */
 
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 992px) {
 	#new-home-page .container {
-		width: 1050px;
+		width: 1040px;
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	#new-home-page .container {
+		width: 1090px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	#new-home-page .container {
+		width: 992px;
+	}
+
+	#new-home-page .home-hero .cta .buttons {
+		a {
+			display: block;
+			&:first-child {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+
 
 .home-page-navbar {
 	margin: 0;
 	background-color: @marine;
 	height: 130px;
-	padding: 30px 0;
+	padding: 30px 0 0 0;
 	border-radius: 0;
 
 	.navbar-brand {
@@ -49,8 +73,8 @@
 			}
 
 			a {
-				padding: 6px 11px 3px 11px;
-				margin: 0 2px;
+				padding: 4px 11px 2px 11px;
+				margin: 0 5px;
 				position: relative;
 				display: block;
 				line-height: 20px;
@@ -68,6 +92,8 @@
 			.sign-up-btn {
 				border: 1px solid #fff;
 				border-radius: 4px;
+				margin-left: 15px;
+				padding: 4px 9px 2px 9px;
 			}
 		}
 
@@ -337,7 +363,7 @@
 				font-size: 14px;
 				text-align: center;
 				color: #3c3b3b;
-				font-weight: 500;
+				font-weight: 400;
 			}
 		}
 
@@ -376,10 +402,10 @@
 
 .home-hero {
 	background-color: @marine;
-	padding: 50px 0 45px 0;
+	padding: 0 0 33px 0;
 
 	.cta {
-		margin-top: 100px;
+		margin-top: 84px;
 
 		h1 {
 			font-size: @hero-header-font-size;
@@ -396,6 +422,10 @@
 				border: 2px solid #fff;
 				border-radius: 4px;
 				font-weight: bold;
+				width: 140px;
+				display: inline-block;
+				text-align: center;
+				height: 41px;
 
 				&:hover {
 					text-decoration: none;
@@ -475,6 +505,11 @@
 		}
 	}
 
+	.slick-dots {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
 	.one-slide {
 		padding-bottom: 0;
 	}
@@ -490,7 +525,7 @@
 
 .home-page-new {
 	section {
-		padding: 95px 0 135px 0;
+		padding: 100px 0 137px 0;
 		border-bottom: 0;
 		text-align: center;
 
@@ -526,6 +561,7 @@
 		.description {
 			font-size: 21px;
 			margin-bottom: @section-description-mb;
+			font-weight: 400;
 
 			&.black {
 				color: @section-subheader-color;
@@ -550,11 +586,13 @@
 			ul {
 				list-style-type: none;
 				overflow: hidden;
+				margin: 0;
+				-webkit-padding-start: 0;
 
 				li {
 					display: block;
 					float: left;
-					width: 33%;
+					width: 28%;
 
 					&.active {
 						a {
@@ -564,6 +602,10 @@
 						img {
 							opacity: 1;
 						}
+					}
+
+					&:nth-child(2) {
+						margin: 0 8%;
 					}
 				}
 
@@ -587,13 +629,13 @@
 				font-size: 21px;
 				color: #fff;
 				margin-bottom: 75px;
-				min-height: 170px;
+				min-height: 140px;
 			}
 
 			.quote-author {
 				color: @dark-red;
 				font-size: 16px;
-				margin-top: 30px;
+				margin-top: 17px;
 				font-weight: bold;
 				text-transform: uppercase;
 			}
@@ -604,21 +646,63 @@
 		padding: 0;
 		background-image: url(../images/get-started.jpg);
 		background-size: cover;
-		min-height: 485px;
-		display: -webkit-flexbox;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
-		text-align: center;
+		min-height: 488px;
 
 		a {
 			display: inline-block;
-			width: 130px;
 			margin: 0 auto;
+			margin-top: 218px;
+			padding: 15px 0 10px 0;
+		}
+	}
+}
+
+.npr {
+	.container {
+		padding-right: 0;
+	}
+}
+
+.button-red, .button-marine {
+	&.big {
+		height: 52px;
+		width: 194px;
+		font-size: 19px;
+		font-weight: 700;
+	}
+}
+
+.home-page {
+	.apps {
+		margin: 46px auto 0 auto;
+		.app {
+			h1 {
+				font-weight: 600;
+				margin-bottom: 14px;
+			}
+		}
+	}
+}
+
+#new-home-page {
+	.button-yellow, .button-blue, .button-red {
+		font-weight: 700;
+	}
+}
+
+footer {
+	padding: 87px 0;
+	.footer-contacts {
+		width: 622px;
+		font-size: 21px;
+
+		li {
+			margin-right: 31px;
+			margin-left: 0;
+
+			&:last-child {
+				margin-left: 0;
+			}
 		}
 	}
 }
