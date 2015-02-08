@@ -129,6 +129,10 @@
 }
 .home-page-navbar .home-navbar-list li .sign-up-btn:hover {
   background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.home-page-navbar .home-navbar-list .sign-up-wrapper:hover a {
+  color: #fff !important;
 }
 .home-page-navbar .home-navbar-list .button-anchor:hover {
   background-color: #3b3b3b;
@@ -593,4 +597,14 @@ footer .footer-contacts li:last-child {
 .other-pages-navbar {
   padding: 20px 0 0 0;
   height: 112px;
+}
+/* tab outer wrap - making marine */
+.tab-outer-wrap {
+  background-color: #00c2a2;
+}
+/* selected tab - dark marine border top */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-top: 2px solid #027360;
 }

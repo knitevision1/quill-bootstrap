@@ -97,11 +97,18 @@
 
 				&:hover {
 					background: rgba(255,255,255,0.2);
+					color: #fff;
 				}
 			}
 		}
 
-		
+		.sign-up-wrapper {
+			&:hover {
+				a {
+					color: #fff !important;
+				}
+			}
+		}
 
 		.button-anchor {
 			&:hover {
@@ -717,4 +724,17 @@ footer {
 .other-pages-navbar {
 	padding: 20px 0 0 0;
 	height: 112px;
+}
+
+
+/* tab outer wrap - making marine */
+
+.tab-outer-wrap {
+	background-color: @marine;
+}
+
+/* selected tab - dark marine border top */
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border-top: 2px solid #027360;
 }
